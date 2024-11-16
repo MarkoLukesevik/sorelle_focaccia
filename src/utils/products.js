@@ -1,3 +1,75 @@
+export const sandwichesProducts = [
+    {
+        name: 'Мортези',
+        image: '/assets/images/sveps.png',
+        price: 290,
+        description: 'мортадела, страчатела, песто, фокача сендвич, маслиново масло'
+    },
+    {
+        name: 'Пршууто',
+        image: '/assets/images/sveps.png',
+        price: 310,
+        description: 'свинска пршута, рукола, песто, пармезан, фокача сендвич, балсамико крема, маслиново масло'
+    },
+    {
+        name: 'Пршууто биф',
+        image: '/assets/images/sveps.png',
+        price: 330,
+        description: 'говедска пршута, рукола, песто, пармезан фокача сендвич, балсамико крема, маслиново масло'
+    },
+    {
+        name: 'Тартуфо',
+        image: '/assets/images/sveps.png',
+        price: 330,
+        description: 'шунка тартуф, намаз од тартуф, страчатела, рукола, фокача сендвич, маслиново масло'
+    },
+    {
+        name: 'Капрезе',
+        image: '/assets/images/sveps.png',
+        price: 260,
+        description: 'моцарела, песто, босилек, домат, фокача сендвич, балсамико крема, маслиново масло'
+    },
+    {
+        name: 'Веган',
+        image: '/assets/images/sveps.png',
+        price: 230,
+        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, фокача сендвич, маслиново масло'
+    },
+    {
+        name: 'Веге',
+        image: '/assets/images/sveps.png',
+        price: 250,
+        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, страчатела, фокача сендвич, маслиново масло'
+    },
+];
+
+export const supplementsProducts = [
+    {
+        name: 'Страчатела',
+        image: '/assets/images/sveps.png',
+        price: 40
+    },
+    {
+        name: 'Песто',
+        image: '/assets/images/sveps.png',
+        price: 30
+    },
+    {
+        name: 'Крем од маслинка',
+        image: '/assets/images/sveps.png',
+        price: 20
+    },
+];
+
+export const desertsProducts = [
+    {
+        name: 'Тирамису',
+        image: '/assets/images/sveps.png',
+        price: 140,
+        description: 'пишкоти, маскарпоне, слатка павлака, еспресо, какао'
+    },
+];
+
 export const alcoholicProducts = [
     {
         name: 'Водка смирноф 0.4',

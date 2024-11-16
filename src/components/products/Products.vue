@@ -1,18 +1,40 @@
 <script setup>
 import product from './components/product.vue';
 import {
-    beerProducts,
-    waterProducts,
-    wineProducts,
+    sandwichesProducts,
+    supplementsProducts,
+    desertsProducts,
+    alcoholicProducts,
     nonAlcoholicProducts,
+    wineProducts,
+    beerProducts,
     hotDrinkProducts,
-    alcoholicProducts
+    waterProducts,
 } from '@/utils/products';
 
 </script>
 
 <template>
     <div ref="products" class="products">
+        <div ref="sandwiches" class="product-group">
+            <h3 class="product-group-title">Фокача сенвичи</h3>
+            <product v-for="(product, key) in sandwichesProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+        </div>
+
+        <div ref="supplemets" class="product-group">
+            <h3 class="product-group-title">Додатоци</h3>
+            <product v-for="(product, key) in supplementsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+        </div>
+
+        <div ref="deserts" class="product-group">
+            <h3 class="product-group-title">Десерти</h3>
+            <product v-for="(product, key) in desertsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+        </div>
+
+        <div ref="deserts" class="product-group">
+            <h3 class="product-group-title">Алергени</h3>
+        </div>
+
         <div ref="alcoholic" class="product-group">
             <h3 class="product-group-title">Алкохолни пијалоци</h3>
             <product v-for="(product, key) in alcoholicProducts" :product="product" :should-reverse="key % 2 !== 0"/>
@@ -51,8 +73,9 @@ import {
     display: flex;
     flex-direction: column;
     flex: 1 1 70%;
-    row-gap: 2rem;
     align-items: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
 
     overflow: auto;
         
@@ -85,7 +108,7 @@ import {
 .product-group-title {
     color: #be5f54;
 
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 
     text-transform: uppercase;
@@ -116,7 +139,7 @@ import {
 
 @media (min-width: 992px) {
     .product-group {
-        flex: 0 1 50%;
+        flex: 0 1 calc(50% - 1rem);
         align-items: flex-start;
     }
 }

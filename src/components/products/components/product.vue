@@ -7,7 +7,10 @@ const props = defineProps(['product', 'shouldReverse']);
        <div class="product-image-wrapper">
             <img class="product-image" :src="props.product.image" />
        </div>
-       <div class="product-name">{{ props.product.name }}</div>
+       <div class="product-name">
+            <p>{{ props.product.name }}</p>
+            <span v-if="props.product.description">{{ props.product.description }}</span>
+       </div>
        <div class="product-price">{{ props.product.price }} мкд</div>
     </div>
 
@@ -21,7 +24,7 @@ const props = defineProps(['product', 'shouldReverse']);
     justify-content: flex-start;
     column-gap: 0.5rem;
 
-    width: max-content;
+    width: 100%;
 }
 
 .product-image-wrapper {
@@ -43,14 +46,24 @@ const props = defineProps(['product', 'shouldReverse']);
 }
 
 .product-name {
-    color: #040205;
-    font-size: 0.8rem;
+    flex: 0 1 60%;
+}
+
+.product-name > p {
+    color: #626b4e;
+    font-size: 1rem;
     text-transform: uppercase;
+}
+
+.product-name > span {
+    color: #040205;
+    font-size: 0.7rem;
+    word-break: normal;
 }
 
 .product-price {
     color: #040205;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -62,25 +75,15 @@ const props = defineProps(['product', 'shouldReverse']);
     .product-image-wrapper {
         height: 75px;
     }
+
+    .product-name {
+        flex: 0 1 45%;
+    }
 }
 
 @media (min-width: 768px) {
     .product-image-wrapper {
         height: 100px;
-    }
-
-    .product-name {
-        font-size: 1rem;
-    }
-
-    .product-price {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .product {
-        width: unset;
     }
 }
 </style>
