@@ -7,7 +7,7 @@ const emit = defineEmits(['toggle-sidebar'])
         <div class="header-content">
             <img
                 class="header-content-hamburger"
-                src="/assets/images/hamburger.png"
+                src="/assets/images/menu.png"
                 @click="emit('toggle-sidebar')"
             />
             <img class="header-content-logo" src="/assets/images/sollere.png" />
@@ -18,7 +18,8 @@ const emit = defineEmits(['toggle-sidebar'])
 
 <style scoped>
 .header {
-    position: relative;
+    position: fixed;
+    background-color: #f8f7d0;
 
     display: flex;
     flex-direction: column;
@@ -63,6 +64,10 @@ const emit = defineEmits(['toggle-sidebar'])
 }
 
 @media (min-width: 600px) {
+    .header {
+        position: relative;
+    }
+
     .header-content {
         justify-content: flex-start;
     }

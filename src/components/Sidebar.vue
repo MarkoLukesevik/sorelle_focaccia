@@ -38,7 +38,8 @@ const activeLinkStyle = (link) => {
 <style scoped>
 .sidebar{
     position: absolute;
-    top: 0;
+    top: 10vh;
+    top: 10dvh;
     bottom: 0;
 
     display: flex;
@@ -51,8 +52,8 @@ const activeLinkStyle = (link) => {
     width: 100vw;
     width: 100dvw;
 
-    background-color: #040205;
-    padding: 3rem 1rem;
+    background: linear-gradient(to bottom, #f8f7d0, #040205);
+    padding: 5rem 1rem;
 
     transition: all 0.3s ease-out;
     z-index: 1;
@@ -63,7 +64,6 @@ const activeLinkStyle = (link) => {
     flex-direction: column;
     flex: 1 1 auto;
     align-items: center;
-    justify-content: center;
     row-gap: 1rem;
 
     color: #ffffff;
@@ -89,7 +89,8 @@ const activeLinkStyle = (link) => {
         flex: 0 1 20%;
 
         transform: none;
-        background-color: transparent;
+        background: transparent;
+        padding: 2.4rem 1rem;
 
         box-shadow: 6px 0px 12px -3px rgba(190, 95, 84, 0.75);
     }

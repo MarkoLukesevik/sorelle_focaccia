@@ -11,6 +11,7 @@ const groups = ['alcoholic', 'nonAlcoholic', 'wine', 'beer', 'hotDrinks', 'water
 const isSidebarOpen = ref(false);
 const activeLink = ref('sandwiches');
 const productsComponentRef = ref(null);
+const app = ref(null);
 
 const toggleSidebar = () => {
     isSidebarOpen.value = !isSidebarOpen.value;
@@ -41,6 +42,7 @@ const checkActiveLink = () => {
 
 onMounted(() => {
     if (productsComponentRef.value.$refs.products) {
+        app.value.addEventListener('scroll', checkActiveLink);
         productsComponentRef.value.$refs.products.addEventListener('scroll', checkActiveLink);
     }
     checkActiveLink();
@@ -48,7 +50,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="app">
+    <div ref="app" class="app">
         <app-header @toggle-sidebar="toggleSidebar" />
         <div class="app-content__wrapper">
             <sidebar
@@ -83,12 +85,18 @@ onMounted(() => {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
+
+    margin-top: 10vh;
+    margin-top: 10dvh;
 }
 
 @media (min-width: 600px) {
     .app-content__wrapper {
         height: 70vh;
         height: 70dvh;
+
+        margin-top: 0;
+
         overflow-y: auto;
     }
 }
