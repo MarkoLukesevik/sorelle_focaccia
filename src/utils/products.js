@@ -1,60 +1,49 @@
-export const beerProducts = [
+export const alcoholicProducts = [
     {
-        name: 'Скопско',
-        image: '/assets/images/skopsko.png',
-        price: 90
-    },
-    {
-        name: 'Скопско смут',
-        image: '/assets/images/skopsko-smooth.png',
-        price: 90
-    },
-    {
-        name: 'Хајникен',
-        image: '/assets/images/heineken.png',
-        price: 110
-    }
-];
-
-export const wineProducts = [
-    {
-        name: 'СС бленд бело класик 150мл',
-        image: '/assets/images/casa-belo.png',
+        name: 'Водка смирноф 0.4',
+        image: '/assets/images/sveps.png',
         price: 160
     },
     {
-        name: 'СС бленд црвено класик 150мл',
-        image: '/assets/images/casa-crveno.png',
+        name: 'Водка абсолут 0.4',
+        image: '/assets/images/sveps.png',
+        price: 170
+    },
+    {
+        name: 'Џин гордонс 0.4',
+        image: '/assets/images/sveps.png',
         price: 160
     },
     {
-        name: 'Куве александрија розе 187 мл',
-        image: '/assets/images/alexandria-cuve-roze.png',
-        price: 220
+        name: 'Џин бомбај 0.4',
+        image: '/assets/images/sveps.png',
+        price: 180
     },
     {
-        name: 'Луда мара куве - бело',
-        image: '/assets/images/luda-mara-belo.png',
-        price: 1100
+        name: 'Виски џејмисон 0.4',
+        image: '/assets/images/sveps.png',
+        price: 200
     },
     {
-        name: 'Луда мара куве - црвено',
-        image: '/assets/images/luda-mara-crveno.png',
-        price: 1100
-    }
-];
-
-export const waterProducts = [
-    {
-        name: 'Роса негазирана 0.33',
-        image: '/assets/images/rosa.png',
-        price: 70
+        name: 'Виски џек даниелс 0.4',
+        image: '/assets/images/sveps.png',
+        price: 250
     },
     {
-        name: 'Роса газирана 0.33',
-        image: '/assets/images/rosa-gazirana.png',
-        price: 70
-    }
+        name: 'Јегермајстер 0.5',
+        image: '/assets/images/sveps.png',
+        price: 180
+    },
+    {
+        name: 'Кампари 0.6',
+        image: '/assets/images/sveps.png',
+        price: 180
+    },
+    {
+        name: 'Аперол 0.6',
+        image: '/assets/images/sveps.png',
+        price: 180
+    },
 ];
 
 export const nonAlcoholicProducts = [
@@ -105,52 +94,50 @@ export const nonAlcoholicProducts = [
     },
 ];
 
-export const alcoholicProducts = [
+export const wineProducts = [
     {
-        name: 'Водка смирноф 0.4',
-        image: '/assets/images/sveps.png',
+        name: 'СС бленд бело класик 150мл',
+        image: '/assets/images/casa-belo.png',
         price: 160
     },
     {
-        name: 'Водка абсолут 0.4',
-        image: '/assets/images/sveps.png',
-        price: 170
-    },
-    {
-        name: 'Џин гордонс 0.4',
-        image: '/assets/images/sveps.png',
+        name: 'СС бленд црвено класик 150мл',
+        image: '/assets/images/casa-crveno.png',
         price: 160
     },
     {
-        name: 'Џин бомбај 0.4',
-        image: '/assets/images/sveps.png',
-        price: 180
+        name: 'Куве александрија розе 187 мл',
+        image: '/assets/images/alexandria-cuve-roze.png',
+        price: 220
     },
     {
-        name: 'Виски џејмисон 0.4',
-        image: '/assets/images/sveps.png',
-        price: 200
+        name: 'Луда мара куве - бело',
+        image: '/assets/images/luda-mara-belo.png',
+        price: 1100
     },
     {
-        name: 'Виски џек даниелс 0.4',
-        image: '/assets/images/sveps.png',
-        price: 250
+        name: 'Луда мара куве - црвено',
+        image: '/assets/images/luda-mara-crveno.png',
+        price: 1100
+    }
+];
+
+export const beerProducts = [
+    {
+        name: 'Скопско',
+        image: '/assets/images/skopsko.png',
+        price: 90
     },
     {
-        name: 'Јегермајстер 0.5',
-        image: '/assets/images/sveps.png',
-        price: 180
+        name: 'Скопско смут',
+        image: '/assets/images/skopsko-smooth.png',
+        price: 90
     },
     {
-        name: 'Кампари 0.6',
-        image: '/assets/images/sveps.png',
-        price: 180
-    },
-    {
-        name: 'Аперол 0.6',
-        image: '/assets/images/sveps.png',
-        price: 180
-    },
+        name: 'Хајникен',
+        image: '/assets/images/heineken.png',
+        price: 110
+    }
 ];
 
 export const hotDrinkProducts = [
@@ -179,4 +166,17 @@ export const hotDrinkProducts = [
         image: '/assets/images/sveps.png',
         price: 80
     },
+];
+
+export const waterProducts = [
+    {
+        name: 'Роса негазирана 0.33',
+        image: '/assets/images/rosa.png',
+        price: 70
+    },
+    {
+        name: 'Роса газирана 0.33',
+        image: '/assets/images/rosa-gazirana.png',
+        price: 70
+    }
 ];
