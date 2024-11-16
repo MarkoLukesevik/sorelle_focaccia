@@ -1,4 +1,4 @@
-export const beers = [
+export const beerProducts = [
     {
         name: 'Скопско',
         image: '/assets/images/skopsko.png',
@@ -16,7 +16,7 @@ export const beers = [
     }
 ];
 
-export const wines = [
+export const wineProducts = [
     {
         name: 'СС бленд бело класик 150мл',
         image: '/assets/images/casa-belo.png',
@@ -44,7 +44,7 @@ export const wines = [
     }
 ];
 
-export const waters = [
+export const waterProducts = [
     {
         name: 'Роса негазирана 0.33',
         image: '/assets/images/rosa.png',
@@ -57,7 +57,7 @@ export const waters = [
     }
 ];
 
-export const nonAlcoholic = [
+export const nonAlcoholicProducts = [
     {
         name: 'Кока кола лим. 0.33',
         image: '/assets/images/coca-cola-limenka.png',
@@ -105,7 +105,7 @@ export const nonAlcoholic = [
     },
 ];
 
-export const alcoholic = [
+export const alcoholicProducts = [
     {
         name: 'Водка смирноф 0.4',
         image: '/assets/images/sveps.png',
@@ -153,7 +153,7 @@ export const alcoholic = [
     },
 ];
 
-export const hotDrink = [
+export const hotDrinkProducts = [
     {
         name: 'Еспресо',
         image: '/assets/images/sveps.png',

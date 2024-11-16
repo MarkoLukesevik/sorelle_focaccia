@@ -13,7 +13,6 @@ const sidebarClasses = computed(() => {
 })
 
 const activeLinkStyle = (link) => {
-    console.log(props.activeLink, link)
     if (link === props.activeLink)
         return { color: '#be5f54' };
 }
