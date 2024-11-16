@@ -71,25 +71,25 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+
+    overflow-y: auto;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
 }
 
 .app-content__wrapper {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
-   
-    overflow-y: auto;
 }
 
-.app-content__wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .app-content__wrapper {
         height: 70vh;
         height: 70dvh;
-        overflow-y: unset;
+        overflow-y: auto;
     }
 }
 </style>
