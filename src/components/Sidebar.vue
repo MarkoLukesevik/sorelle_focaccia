@@ -14,12 +14,13 @@ const sidebarClasses = computed(() => {
 
 const activeLinkStyle = (link) => {
     if (link === props.activeLink)
-        return { color: '#be5f54' };
+        return { color: '#be5f54', textDecoration: 'underline' };
 }
 </script>
 
 <template>
     <div :class="sidebarClasses">
+        <div class="sidebar-border"></div>
         <div class="sidebar-logo"></div>
         <ul class="sidebar-links">
             <li :style="activeLinkStyle('sandwiches')" @click="emit('handle-link-click', 'sandwiches')">Фокача сендвичи</li>
@@ -83,21 +84,36 @@ const activeLinkStyle = (link) => {
 
 @media (min-width: 600px) {
     .sidebar {
-        position: unset;
+        position: relative;
+        top: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
-        flex: 0 1 20%;
+        flex: 0 1 200px;
 
         transform: none;
         background: transparent;
-        padding: 2.4rem 1rem;
+        padding: 0;
 
-        box-shadow: 6px 0px 12px -3px rgba(190, 95, 84, 0.75);
+        /* box-shadow: 6px 0px 12px -3px rgba(190, 95, 84, 0.75); */
+    }
+
+    .sidebar-border {
+        position: absolute;
+        right: -10px;
+        top: 20px;
+        bottom: 20px;
+
+        width: 20px;
+        background-image:  url(/assets/images/border.png);
+        background-repeat: repeat
     }
 
     .sidebar-links {
         align-items: flex-start;
         justify-content: flex-start;
+        width: 100%;
+        padding: 2.4rem 1rem;
 
         color: #040205;
         font-size: 1rem;
@@ -105,6 +121,12 @@ const activeLinkStyle = (link) => {
 
     .sidebar-logo {
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        flex: 0 1 235px;
     }
 }
 </style>

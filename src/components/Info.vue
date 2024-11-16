@@ -50,7 +50,7 @@
     position: absolute;
     top: -20px;
 
-     width: 100%;
+    width: 100%;
     height: 20px;
     background-image:  url(/assets/images/border.png);
     background-repeat: repeat
@@ -123,6 +123,7 @@
         flex-direction: row;
         justify-content: space-between;
         row-gap: 0;
+        padding: 0.6rem 2rem;
     }
 
     .info-content-wrapper {
