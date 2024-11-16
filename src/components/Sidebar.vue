@@ -83,45 +83,44 @@ const activeLinkStyle = (link) => {
 }
 
 @media (min-width: 600px) {
-    .sidebar {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 200px;
+.sidebar {
+    position: relative;
+    top: 0;
+    bottom: 0;
 
-        transform: none;
-        background: transparent;
-        padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 200px;
 
-        /* box-shadow: 6px 0px 12px -3px rgba(190, 95, 84, 0.75); */
-    }
+    transform: none;
+    background: transparent;
+    padding: 0;
+}
 
-    .sidebar-border {
-        position: absolute;
-        right: -10px;
-        top: 20px;
-        bottom: 20px;
+.sidebar-border {
+    position: absolute;
+    right: -10px;
+    top: 20px;
+    bottom: 20px;
 
-        width: 20px;
-        background-image:  url(/assets/images/border.png);
-        background-repeat: repeat
-    }
+    width: 20px;
+    background-image:  url(/assets/images/border.png);
+    background-repeat: repeat
+}
 
-    .sidebar-links {
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 2.4rem 1rem;
+.sidebar-links {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2.4rem 1rem;
 
-        color: #040205;
-        font-size: 1rem;
-    }
+    color: #040205;
+    font-size: 1rem;
+}
 
-    .sidebar-logo {
-        display: none;
-    }
+.sidebar-logo {
+    display: none;
+}
 }
 
 @media (min-width: 768px) {

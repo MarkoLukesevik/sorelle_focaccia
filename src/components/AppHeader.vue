@@ -1,5 +1,5 @@
 <script setup>
-const emit = defineEmits(['toggle-sidebar'])
+const emit = defineEmits(['toggle-sidebar']);
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['product', 'shouldReverse'])
+const props = defineProps(['product', 'shouldReverse']);
 </script>
 
 <template>
