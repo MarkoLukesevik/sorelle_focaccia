@@ -126,7 +126,7 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Кока кола зеро лим. 0.33',
-        image: '/assets/images/coca-cola-zero-limenka.png',
+        image: 'coca-cola-zero-limenka',
         price: 70
     },
     {
@@ -146,22 +146,22 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Спрајт 0.25',
-        image: '/assets/images/sprite.png',
+        image: 'sprite',
         price: 90
     },
     {
         name: 'Швепс Битер Лемон 0.25',
-        image: '/assets/images/sveps.png',
+        image: 'sveps',
         price: 90
     },
     {
         name: 'Швепс танџерина 0.25',
-        image: '/assets/images/sveps-tangerina.png',
+        image: 'sveps-tangerina',
         price: 90
     },
     {
         name: 'Швепс тоник 0.25',
-        image: '/assets/images/sveps.png',
+        image: 'sveps',
         price: 90
     },
 ];
@@ -169,27 +169,27 @@ export const nonAlcoholicProducts = [
 export const wineProducts = [
     {
         name: 'СС бленд бело класик 150мл',
-        image: '/assets/images/casa-belo.png',
+        image: 'casa-belo',
         price: 160
     },
     {
         name: 'СС бленд црвено класик 150мл',
-        image: '/assets/images/casa-crveno.png',
+        image: 'casa-crveno',
         price: 160
     },
     {
         name: 'Куве александрија розе 187 мл',
-        image: '/assets/images/alexandria-cuve-roze.png',
+        image: 'alexandria-cuve-roze',
         price: 220
     },
     {
         name: 'Луда мара куве - бело',
-        image: '/assets/images/luda-mara-belo.png',
+        image: 'luda-mara-belo',
         price: 1100
     },
     {
         name: 'Луда мара куве - црвено',
-        image: '/assets/images/luda-mara-crveno.png',
+        image: 'luda-mara-crveno',
         price: 1100
     }
 ];
@@ -197,17 +197,17 @@ export const wineProducts = [
 export const beerProducts = [
     {
         name: 'Скопско',
-        image: '/assets/images/skopsko.png',
+        image: 'skopsko',
         price: 90
     },
     {
         name: 'Скопско смут',
-        image: '/assets/images/skopsko-smooth.png',
+        image: 'skopsko-smooth',
         price: 90
     },
     {
         name: 'Хајникен',
-        image: '/assets/images/heineken.png',
+        image: 'heineken',
         price: 110
     }
 ];
@@ -243,12 +243,12 @@ export const hotDrinkProducts = [
 export const waterProducts = [
     {
         name: 'Роса негазирана 0.33',
-        image: '/assets/images/rosa.png',
+        image: 'rosa',
         price: 70
     },
     {
         name: 'Роса газирана 0.33',
-        image: '/assets/images/rosa-gazirana.png',
+        image: 'rosa-gazirana',
         price: 70
     }
 ];
