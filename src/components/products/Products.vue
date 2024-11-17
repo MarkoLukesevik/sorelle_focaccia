@@ -1,7 +1,8 @@
 <script setup>
+import { ref } from 'vue';
 import product from './components/product.vue';
 
-const sandwichesProducts = [
+const sandwichesProducts = ref([
     {
         name: 'Мортези',
         image: '',
@@ -44,9 +45,9 @@ const sandwichesProducts = [
         price: 250,
         description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, страчатела, фокача сендвич, маслиново масло'
     },
-];
+]);
 
-const supplementsProducts = [
+const supplementsProducts = ref([
     {
         name: 'Страчатела',
         image: '',
@@ -62,18 +63,18 @@ const supplementsProducts = [
         image: '',
         price: 20
     },
-];
+]);
 
-const desertsProducts = [
+const desertsProducts = ref([
     {
         name: 'Тирамису',
         image: '',
         price: 140,
         description: 'пишкоти, маскарпоне, слатка павлака, еспресо, какао'
     },
-];
+]);
 
-const alcoholicProducts = [
+const alcoholicProducts = ref([
     {
         name: 'Водка смирноф 0.4',
         image: '',
@@ -119,9 +120,9 @@ const alcoholicProducts = [
         image: '',
         price: 180
     },
-];
+]);
 
-const nonAlcoholicProducts = [
+const nonAlcoholicProducts = ref([
     {
         name: 'Кока кола лим. 0.33',
         image: '',
@@ -167,9 +168,9 @@ const nonAlcoholicProducts = [
         image: 'assets/images/sveps.png',
         price: 90
     },
-];
+]);
 
-const wineProducts = [
+const wineProducts = ref([
     {
         name: 'СС бленд бело класик 150мл',
         image: 'assets/images/casa-belo.png',
@@ -195,9 +196,9 @@ const wineProducts = [
         image: 'assets/images/luda-mara-crveno.png',
         price: 1100
     }
-];
+]);
 
-const beerProducts = [
+const beerProducts = ref([
     {
         name: 'Скопско',
         image: 'assets/images/skopsko.png',
@@ -213,9 +214,9 @@ const beerProducts = [
         image: 'assets/images/heineken.png',
         price: 110
     }
-];
+]);
 
-const hotDrinkProducts = [
+const hotDrinkProducts = ref([
     {
         name: 'Еспресо',
         image: '',
@@ -241,9 +242,9 @@ const hotDrinkProducts = [
         image: '',
         price: 80
     },
-];
+]);
 
-const waterProducts = [
+const waterProducts = ref([
     {
         name: 'Роса негазирана 0.33',
         image: 'assets/images/rosa.png',
@@ -254,7 +255,7 @@ const waterProducts = [
         image: 'assets/images/rosa-gazirana.png',
         price: 70
     }
-];
+]);
 
 </script>
 
