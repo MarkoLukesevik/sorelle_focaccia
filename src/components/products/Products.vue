@@ -1,261 +1,17 @@
 <script setup>
 import { ref } from 'vue';
-import product from './components/product.vue';
-
-const sandwichesProducts = ref([
-    {
-        name: 'Мортези',
-        image: '',
-        price: 290,
-        description: 'мортадела, страчатела, песто, фокача сендвич, маслиново масло'
-    },
-    {
-        name: 'Пршууто',
-        image: '',
-        price: 310,
-        description: 'свинска пршута, рукола, песто, пармезан, фокача сендвич, балсамико крема, маслиново масло'
-    },
-    {
-        name: 'Пршууто биф',
-        image: '',
-        price: 330,
-        description: 'говедска пршута, рукола, песто, пармезан фокача сендвич, балсамико крема, маслиново масло'
-    },
-    {
-        name: 'Тартуфо',
-        image: '',
-        price: 330,
-        description: 'шунка тартуф, намаз од тартуф, страчатела, рукола, фокача сендвич, маслиново масло'
-    },
-    {
-        name: 'Капрезе',
-        image: '',
-        price: 260,
-        description: 'моцарела, песто, босилек, домат, фокача сендвич, балсамико крема, маслиново масло'
-    },
-    {
-        name: 'Веган',
-        image: '',
-        price: 230,
-        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, фокача сендвич, маслиново масло'
-    },
-    {
-        name: 'Веге',
-        image: '',
-        price: 250,
-        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, страчатела, фокача сендвич, маслиново масло'
-    },
-]);
-
-const supplementsProducts = ref([
-    {
-        name: 'Страчатела',
-        image: '',
-        price: 40
-    },
-    {
-        name: 'Песто',
-        image: '',
-        price: 30
-    },
-    {
-        name: 'Крем од маслинка',
-        image: '',
-        price: 20
-    },
-]);
-
-const desertsProducts = ref([
-    {
-        name: 'Тирамису',
-        image: '',
-        price: 140,
-        description: 'пишкоти, маскарпоне, слатка павлака, еспресо, какао'
-    },
-]);
-
-const alcoholicProducts = ref([
-    {
-        name: 'Водка смирноф 0.4',
-        image: '',
-        price: 160
-    },
-    {
-        name: 'Водка абсолут 0.4',
-        image: '',
-        price: 170
-    },
-    {
-        name: 'Џин гордонс 0.4',
-        image: '',
-        price: 160
-    },
-    {
-        name: 'Џин бомбај 0.4',
-        image: '',
-        price: 180
-    },
-    {
-        name: 'Виски џејмисон 0.4',
-        image: '',
-        price: 200
-    },
-    {
-        name: 'Виски џек даниелс 0.4',
-        image: '',
-        price: 250
-    },
-    {
-        name: 'Јегермајстер 0.5',
-        image: '',
-        price: 180
-    },
-    {
-        name: 'Кампари 0.6',
-        image: '',
-        price: 180
-    },
-    {
-        name: 'Аперол 0.6',
-        image: '',
-        price: 180
-    },
-]);
-
-const nonAlcoholicProducts = ref([
-    {
-        name: 'Кока кола лим. 0.33',
-        image: '',
-        price: 70
-    },
-    {
-        name: 'Кока кола зеро лим. 0.33',
-        image: '/assets/images/coca-cola-zero-limenka.png',
-        price: 70
-    },
-    {
-        name: 'Кока кола 0.25',
-        image: '',
-        price: 90
-    },
-    {
-        name: 'Кока кола зеро 0.25',
-        image: '',
-        price: 90
-    },
-    {
-        name: 'Фанта 0.25',
-        image: '',
-        price: 90
-    },
-    {
-        name: 'Спрајт 0.25',
-        image: 'assets/images/sprite.png',
-        price: 90
-    },
-    {
-        name: 'Швепс Битер Лемон 0.25',
-        image: 'assets/images/sveps.png',
-        price: 90
-    },
-    {
-        name: 'Швепс танџерина 0.25',
-        image: 'assets/images/sveps-tangerina.png',
-        price: 90
-    },
-    {
-        name: 'Швепс тоник 0.25',
-        image: 'assets/images/sveps.png',
-        price: 90
-    },
-]);
-
-const wineProducts = ref([
-    {
-        name: 'СС бленд бело класик 150мл',
-        image: 'assets/images/casa-belo.png',
-        price: 160
-    },
-    {
-        name: 'СС бленд црвено класик 150мл',
-        image: 'assets/images/casa-crveno.png',
-        price: 160
-    },
-    {
-        name: 'Куве александрија розе 187 мл',
-        image: 'assets/images/alexandria-cuve-roze.png',
-        price: 220
-    },
-    {
-        name: 'Луда мара куве - бело',
-        image: 'assets/images/luda-mara-belo.png',
-        price: 1100
-    },
-    {
-        name: 'Луда мара куве - црвено',
-        image: 'assets/images/luda-mara-crveno.png',
-        price: 1100
-    }
-]);
-
-const beerProducts = ref([
-    {
-        name: 'Скопско',
-        image: 'assets/images/skopsko.png',
-        price: 90
-    },
-    {
-        name: 'Скопско смут',
-        image: 'assets/images/skopsko-smooth.png',
-        price: 90
-    },
-    {
-        name: 'Хајникен',
-        image: 'assets/images/heineken.png',
-        price: 110
-    }
-]);
-
-const hotDrinkProducts = ref([
-    {
-        name: 'Еспресо',
-        image: '',
-        price: 70
-    },
-    {
-        name: 'Мало макијато',
-        image: '',
-        price: 70
-    },
-    {
-        name: 'Големо макијато',
-        image: '',
-        price: 80
-    },
-    {
-        name: 'Капучино',
-        image: '',
-        price: 80
-    },
-    {
-        name: 'Чај',
-        image: '',
-        price: 80
-    },
-]);
-
-const waterProducts = ref([
-    {
-        name: 'Роса негазирана 0.33',
-        image: 'assets/images/rosa.png',
-        price: 70
-    },
-    {
-        name: 'Роса газирана 0.33',
-        image: 'assets/images/rosa-gazirana.png',
-        price: 70
-    }
-]);
+import MenuItem from './components/MenuItem.vue';
+import {
+    sandwichesProducts,
+    supplementsProducts,
+    desertsProducts,
+    alcoholicProducts,
+    nonAlcoholicProducts,
+    wineProducts,
+    beerProducts,
+    hotDrinkProducts,
+    waterProducts
+} from '@/utils/products';
 
 </script>
 
@@ -263,47 +19,17 @@ const waterProducts = ref([
     <div ref="products" class="products">
         <div ref="sandwiches" class="product-group">
             <h3 class="product-group-title">Фокача сенвичи</h3>
-            <!-- <div v-for="product in sandwichesProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div> -->
-            <product v-for="product in sandwichesProducts" :product="product"/>
+            <menu-item v-for="product in sandwichesProducts" :product="product"/>
         </div>
 
         <div ref="supplements" class="product-group">
             <h3 class="product-group-title">Додатоци</h3>
-            <div v-for="product in supplementsProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in supplementsProducts" :product="product"/> -->
+            <menu-item v-for="product in supplementsProducts" :product="product"/>
         </div>
 
         <div ref="deserts" class="product-group">
             <h3 class="product-group-title">Десерти</h3>
-            <div v-for="product in desertsProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in desertsProducts" :product="product"/> -->
+            <menu-item v-for="product in desertsProducts" :product="product"/>
         </div>
 
         <div ref="allergens" class="product-group">
@@ -327,92 +53,32 @@ const waterProducts = ref([
 
         <div ref="alcoholic" class="product-group">
             <h3 class="product-group-title">Алкохолни пијалоци</h3>
-            <div v-for="product in alcoholicProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in alcoholicProducts" :product="product"/> -->
+            <menu-item v-for="product in alcoholicProducts" :product="product"/>
         </div>
 
         <div ref="nonAlcoholic" class="product-group">
             <h3 class="product-group-title">Безалкохолни пијалоци</h3>
-            <div v-for="product in nonAlcoholicProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in nonAlcoholicProducts" :product="product"/> -->
+            <menu-item v-for="product in nonAlcoholicProducts" :product="product"/>
         </div>
 
         <div ref="wine" class="product-group">
             <h3 class="product-group-title">Вино</h3>
-            <div v-for="product in wineProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in wineProducts" :product="product"/> -->
+            <menu-item v-for="product in wineProducts" :product="product"/>
         </div>
 
         <div ref="beer" class="product-group">
             <h3 class="product-group-title">Пиво:</h3>
-            <div v-for="product in beerProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in beerProducts" :product="product"/> -->
+            <menu-item v-for="product in beerProducts" :product="product"/>
         </div>
 
         <div ref="hotDrinks" class="product-group">
             <h3 class="product-group-title">Топли напитоци:</h3>
-            <div v-for="product in hotDrinkProducts" class="product">
-                <div class="product-image-wrapper">
-                        <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product) in hotDrinkProducts" :product="product"/> -->
+            <menu-item v-for="product) in hotDrinkProducts" :product="product"/>
         </div>
 
         <div ref="water" class="product-group">
             <h3 class="product-group-title">Вода</h3>
-            <div v-for="product in waterProducts" class="product">
-                <div class="product-image-wrapper">
-                    <img v-if="product.image" class="product-image" :src="product.image" />
-                </div>
-                <div class="product-name">
-                        <p>{{ product.name }}</p>
-                        <span v-if="product.description">{{ product.description }}</span>
-                </div>
-                <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in waterProducts" :product="product"/> -->
+            <menu-item v-for="product in waterProducts" :product="product"/>
         </div>
     </div>
 </template>
