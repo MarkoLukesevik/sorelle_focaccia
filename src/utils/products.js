@@ -73,47 +73,47 @@ export const desertsProducts = [
 export const alcoholicProducts = [
     {
         name: 'Водка смирноф 0.4',
-        image: '',
+        image: '/assets/images/smirnoff.png',
         price: 160
     },
     {
         name: 'Водка абсолут 0.4',
-        image: '',
+        image: '/assets/images/absolut.png',
         price: 170
     },
     {
         name: 'Џин гордонс 0.4',
-        image: '',
+        image: '/assets/images/gordons.png',
         price: 160
     },
     {
         name: 'Џин бомбај 0.4',
-        image: '',
+        image: '/assets/images/bombay.png',
         price: 180
     },
     {
         name: 'Виски џејмисон 0.4',
-        image: '',
+        image: '/assets/images/jameson.png',
         price: 200
     },
     {
         name: 'Виски џек даниелс 0.4',
-        image: '',
+        image: '/assets/images/jack.png',
         price: 250
     },
     {
         name: 'Јегермајстер 0.5',
-        image: '',
+        image: '/assets/images/jeger.png',
         price: 180
     },
     {
         name: 'Кампари 0.6',
-        image: '',
+        image: '/assets/images/campari.png',
         price: 180
     },
     {
         name: 'Аперол 0.6',
-        image: '',
+        image: '/assets/images/aperol.png',
         price: 180
     },
 ];
@@ -121,27 +121,27 @@ export const alcoholicProducts = [
 export const nonAlcoholicProducts = [
     {
         name: 'Кока кола лим. 0.33',
-        image: '',
+        image: '/assets/images/coca-cola-limenka.png',
         price: 70
     },
     {
         name: 'Кока кола зеро лим. 0.33',
-        image: 'assets/images/coca-cola-zero-limenka.png',
+        image: '/assets/images/coca-cola-zero-limenka.png',
         price: 70
     },
     {
         name: 'Кока кола 0.25',
-        image: '',
+        image: '/assets/images/coca-cola-staklo.png',
         price: 90
     },
     {
         name: 'Кока кола зеро 0.25',
-        image: '',
+        image: '/assets/images/coca-cola-zero-staklo.png',
         price: 90
     },
     {
         name: 'Фанта 0.25',
-        image: '',
+        image: '/assets/images/fanta.png',
         price: 90
     },
     {
@@ -151,17 +151,17 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Швепс Битер Лемон 0.25',
-        image: 'assets/images/sveps.png',
+        image: '/assets/images/sveps.png',
         price: 90
     },
     {
         name: 'Швепс танџерина 0.25',
-        image: 'assets/images/sveps-tangerina.png',
+        image: '/assets/images/sveps-tangerina.png',
         price: 90
     },
     {
         name: 'Швепс тоник 0.25',
-        image: 'assets/images/sveps.png',
+        image: '/assets/images/tonik.png',
         price: 90
     },
 ];
@@ -179,7 +179,7 @@ export const wineProducts = [
     },
     {
         name: 'Куве александрија розе 187 мл',
-        image: 'assets/images/alexandria-cuve-roze.png',
+        image: 'assets/images/roze.png',
         price: 220
     },
     {
@@ -215,27 +215,27 @@ export const beerProducts = [
 export const hotDrinkProducts = [
     {
         name: 'Еспресо',
-        image: '',
+        image: '/assets/images/espresso.png',
         price: 70
     },
     {
         name: 'Мало макијато',
-        image: '',
+        image: '/assets/images/macchiato.png',
         price: 70
     },
     {
         name: 'Големо макијато',
-        image: '',
+        image: '/assets/images/macchiato.png',
         price: 80
     },
     {
         name: 'Капучино',
-        image: '',
+        image: '/assets/images/capucino.png',
         price: 80
     },
     {
         name: 'Чај',
-        image: '',
+        image: '/assets/images/tea.png',
         price: 80
     },
 ];
