@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import product from '@/components/products/components/product.vue';
+import product from './components/product.vue';
 
 const sandwichesProducts = ref([
     {
@@ -263,7 +263,7 @@ const waterProducts = ref([
     <div ref="products" class="products">
         <div ref="sandwiches" class="product-group">
             <h3 class="product-group-title">Фокача сенвичи</h3>
-            <div v-for="product in sandwichesProducts" class="product">
+            <!-- <div v-for="product in sandwichesProducts" class="product">
                 <div class="product-image-wrapper">
                         <img v-if="product.image" class="product-image" :src="product.image" />
                 </div>
@@ -272,8 +272,8 @@ const waterProducts = ref([
                         <span v-if="product.description">{{ product.description }}</span>
                 </div>
                 <div class="product-price">{{ product.price }} мкд</div>
-            </div>
-            <!-- <product v-for="product in sandwichesProducts" :product="product"/> -->
+            </div> -->
+            <product v-for="product in sandwichesProducts" :product="product"/>
         </div>
 
         <div ref="supplements" class="product-group">
