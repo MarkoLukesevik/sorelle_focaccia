@@ -263,17 +263,47 @@ const waterProducts = ref([
     <div ref="products" class="products">
         <div ref="sandwiches" class="product-group">
             <h3 class="product-group-title">Фокача сенвичи</h3>
-            <product v-for="product in sandwichesProducts" :product="product"/>
+            <div v-for="product in sandwichesProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in sandwichesProducts" :product="product"/> -->
         </div>
 
         <div ref="supplements" class="product-group">
             <h3 class="product-group-title">Додатоци</h3>
-            <product v-for="product in supplementsProducts" :product="product"/>
+            <div v-for="product in supplementsProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in supplementsProducts" :product="product"/> -->
         </div>
 
         <div ref="deserts" class="product-group">
             <h3 class="product-group-title">Десерти</h3>
-            <product v-for="product in desertsProducts" :product="product"/>
+            <div v-for="product in desertsProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in desertsProducts" :product="product"/> -->
         </div>
 
         <div ref="allergens" class="product-group">
@@ -297,32 +327,92 @@ const waterProducts = ref([
 
         <div ref="alcoholic" class="product-group">
             <h3 class="product-group-title">Алкохолни пијалоци</h3>
-            <product v-for="product in alcoholicProducts" :product="product"/>
+            <div v-for="product in alcoholicProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in alcoholicProducts" :product="product"/> -->
         </div>
 
         <div ref="nonAlcoholic" class="product-group">
             <h3 class="product-group-title">Безалкохолни пијалоци</h3>
-            <product v-for="product in nonAlcoholicProducts" :product="product"/>
+            <div v-for="product in nonAlcoholicProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in nonAlcoholicProducts" :product="product"/> -->
         </div>
 
         <div ref="wine" class="product-group">
             <h3 class="product-group-title">Вино</h3>
-            <product v-for="product in wineProducts" :product="product"/>
+            <div v-for="product in wineProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in wineProducts" :product="product"/> -->
         </div>
 
         <div ref="beer" class="product-group">
             <h3 class="product-group-title">Пиво:</h3>
-            <product v-for="product in beerProducts" :product="product"/>
+            <div v-for="product in beerProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in beerProducts" :product="product"/> -->
         </div>
 
         <div ref="hotDrinks" class="product-group">
             <h3 class="product-group-title">Топли напитоци:</h3>
-            <product v-for="product) in hotDrinkProducts" :product="product"/>
+            <div v-for="product in hotDrinkProducts" class="product">
+                <div class="product-image-wrapper">
+                        <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product) in hotDrinkProducts" :product="product"/> -->
         </div>
 
         <div ref="water" class="product-group">
             <h3 class="product-group-title">Вода</h3>
-            <product v-for="product in waterProducts" :product="product"/>
+            <div v-for="product in waterProducts" class="product">
+                <div class="product-image-wrapper">
+                    <img v-if="product.image" class="product-image" :src="product.image" />
+                </div>
+                <div class="product-name">
+                        <p>{{ product.name }}</p>
+                        <span v-if="product.description">{{ product.description }}</span>
+                </div>
+                <div class="product-price">{{ product.price }} мкд</div>
+            </div>
+            <!-- <product v-for="product in waterProducts" :product="product"/> -->
         </div>
     </div>
 </template>
@@ -410,6 +500,56 @@ const waterProducts = ref([
     height: 100%;
 }
 
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+
+    width: 100%;
+}
+
+.product-image-wrapper {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 1/1;
+    background-color: #83837b0f;
+    border-radius: 50%;
+    
+    padding: 0.8rem;
+    height: 60px;
+}
+
+.product-image {
+    height: 100%;
+}
+
+.product-name {
+    flex: 0 1 60%;
+}
+
+.product-name > p {
+    color: #626b4e;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.product-name > span {
+    color: #040205;
+    font-size: 0.7rem;
+    word-break: normal;
+}
+
+.product-price {
+    color: #040205;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 @media (min-width: 600px) {
     .products {
         flex-direction: row;
@@ -429,6 +569,18 @@ const waterProducts = ref([
     .allergen-image-wrapper {
         height: 75px;
     }
+
+    .product {
+        column-gap: 1rem;
+    }
+
+    .product-image-wrapper {
+        height: 75px;
+    }
+
+    .product-name {
+        flex: 0 1 45%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -437,6 +589,10 @@ const waterProducts = ref([
     }
 
     .allergen-image-wrapper {
+        height: 100px;
+    }
+
+    .product-image-wrapper {
         height: 100px;
     }
 }
