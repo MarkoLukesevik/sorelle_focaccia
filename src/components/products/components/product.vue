@@ -1,16 +1,11 @@
 <script setup>
 const props = defineProps(['product', 'shouldReverse']);
-
-const productImage = (image) => {
-    return image ? `/assets/images/${image}.png` : '';
-}
-
 </script>
 
 <template>
     <div class="product">
        <div class="product-image-wrapper">
-            <img class="product-image" :src="productImage(props.product.image)" />
+            <img class="product-image" :src="props.product.image" />
        </div>
        <div class="product-name">
             <p>{{ props.product.name }}</p>
