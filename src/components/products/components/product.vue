@@ -7,13 +7,13 @@ const props = defineProps({
 <template>
     <div class="product">
        <div class="product-image-wrapper">
-            <img v-if="props.product.image" class="product-image" :src="props.product.image" />
+            <img v-if="product.image" class="product-image" :src="product.image" />
        </div>
        <div class="product-name">
-            <p>{{ props.product.name }}</p>
-            <span v-if="props.product.description">{{ props.product.description }}</span>
+            <p>{{ product.name }}</p>
+            <span v-if="product.description">{{ product.description }}</span>
        </div>
-       <div class="product-price">{{ props.product.price }} мкд</div>
+       <div class="product-price">{{ product.price }} мкд</div>
     </div>
 </template>
 
