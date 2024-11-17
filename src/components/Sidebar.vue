@@ -14,7 +14,7 @@ const sidebarClasses = computed(() => {
 
 const activeLinkStyle = (link) => {
     if (link === props.activeLink)
-        return { color: '#be5f54', textDecoration: 'underline' };
+        return { color: '#c7473c' };
 }
 </script>
 
@@ -54,7 +54,7 @@ const activeLinkStyle = (link) => {
     width: 100vw;
     width: 100dvw;
 
-    background: linear-gradient(to bottom, #f8f7d0, #040205);
+    background: linear-gradient(to bottom, #f6f2e9, #83837b);
     padding: 5rem 1rem;
 
     transition: all 0.3s ease-out;
@@ -68,7 +68,7 @@ const activeLinkStyle = (link) => {
     align-items: center;
     row-gap: 1rem;
 
-    color: #ffffff;
+    color: #040205;
     padding-left: 2rem;
     list-style-type: none;
 
@@ -115,7 +115,6 @@ const activeLinkStyle = (link) => {
     width: 100%;
     padding: 2.4rem 1rem;
 
-    color: #040205;
     font-size: 0.9rem;
 }
 

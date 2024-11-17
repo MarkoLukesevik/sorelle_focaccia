@@ -49,8 +49,9 @@ const props = defineProps(['menuItem']);
 }
 
 .menu-item-name > p {
-    color: #626b4e;
+    color: #5b6b40;
     font-size: 0.9rem;
+    font-weight: 500;
     text-transform: uppercase;
 }
 

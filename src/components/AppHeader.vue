@@ -19,7 +19,7 @@ const emit = defineEmits(['toggle-sidebar']);
 <style scoped>
 .header {
     position: fixed;
-    background-color: #f8f7d0;
+    background-color: #f6f2e9;
 
     display: flex;
     flex-direction: column;

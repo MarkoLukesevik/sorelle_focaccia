@@ -11,7 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   height: 100dvh;
-  background-color: #f8f7d0;
+  background-color: #f6f2e9;
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -42,10 +42,10 @@ body {
 
 
 
-/* red #be5f54 */
-/* green #626b4e */
+/* red #c7473c */
+/* green #5b6b40 */
 /* yellow #e5c19f */
 /* gray #83837b */
 /* black #040205 */
-/* bg #f8f7d0 */
+/* bg #f6f2e9 */
 

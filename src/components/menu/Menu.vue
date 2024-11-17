@@ -36,16 +36,30 @@ import {
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/milk.png" />
+                        <img src="/assets/images/allergens/milk.png" />
                     </div>
                     <p>Млеко</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/gluten.png" />
+                        <img src="/assets/images/allergens/gluten.png" />
                     </div>
                     <p>Глутен</p>
+                </div>
+
+                <div class="allergen">
+                    <div class="allergen-image-wrapper">
+                        <img src="/assets/images/allergens/egg.png" />
+                    </div>
+                    <p>Јајца</p>
+                </div>
+
+                <div class="allergen">
+                    <div class="allergen-image-wrapper">
+                        <img src="/assets/images/allergens/peanut.png" />
+                    </div>
+                    <p>Јаткасти</p>
                 </div>
             </div>
         </div>
@@ -121,7 +135,7 @@ import {
 }
 
 .menu-item-group-title {
-    color: #be5f54;
+    color: #c7473c;
 
     font-size: 1.1rem;
     font-weight: 600;
@@ -143,7 +157,7 @@ import {
     align-items: center;
     column-gap: 0.5rem;
 
-    color: #626b4e;
+    color: #5b6b40;
     font-size: 1rem;
 }
 
@@ -198,6 +212,10 @@ import {
     .allergen-image-wrapper {
         height: 100px;
     }
+
+    .allergen-image-wrapper > img {
+    height: 70%;
+}
 }
 
 @media (min-width: 992px) {

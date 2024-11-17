@@ -93,7 +93,7 @@
 }
 
 .info-content__work-time > p {
-    color: #626b4e;
+    color: #5b6b40;
     font-size: 1rem;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .info-content__contact > p {
-    color: #626b4e;
+    color: #5b6b40;
     font-size: 1rem;
 }
 
