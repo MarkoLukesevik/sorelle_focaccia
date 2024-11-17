@@ -94,7 +94,7 @@ onMounted(() => {
         height: 70vh;
         height: 70dvh;
 
-        margin-top: 0;
+        margin: 20px 0;
 
         overflow-y: auto;
     }

@@ -38,7 +38,7 @@ const emit = defineEmits(['toggle-sidebar']);
     justify-content: center;
 
     height: 100%;
-    padding: 0.8rem;
+    padding: 0.4rem;
 }
 
 .header-content-hamburger {

@@ -109,13 +109,13 @@
     display: flex;
     flex-direction: row;
     flex: 0 1 auto;
-    column-gap: 0.3rem;
+    column-gap: 0.8rem;
 
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
 }
 
 .info-img {
-    width: 25px;
+    width: 30px;
 }
 
 @media (min-width: 600px) {
@@ -123,7 +123,7 @@
         flex-direction: row;
         justify-content: space-between;
         row-gap: 0;
-        padding: 0.6rem 2rem;
+        padding: 0.6rem 0.8rem;
     }
 
     .info-content-wrapper {
@@ -133,6 +133,15 @@
 
     .info-content__work-time {
         align-items: flex-start;
+    }
+
+    .info-content__icons {
+        column-gap: 0.3rem;
+        margin-top: 0.2rem;
+    }
+
+    .info-img {
+        width: 25px;
     }
 }
 </style>

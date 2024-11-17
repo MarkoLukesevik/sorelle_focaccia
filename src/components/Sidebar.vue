@@ -40,8 +40,8 @@ const activeLinkStyle = (link) => {
 <style scoped>
 .sidebar{
     position: absolute;
-    top: 10vh;
-    top: 10dvh;
+    top: 9vh;
+    top: 9dvh;
     bottom: 0;
 
     display: flex;
@@ -101,8 +101,8 @@ const activeLinkStyle = (link) => {
 .sidebar-border {
     position: absolute;
     right: -10px;
-    top: 20px;
-    bottom: 20px;
+    top: 0;
+    bottom: 0;
 
     width: 20px;
     background-image:  url(/assets/images/border.png);
