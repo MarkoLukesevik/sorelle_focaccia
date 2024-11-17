@@ -126,7 +126,7 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Кока кола зеро лим. 0.33',
-        image: '/assets/images/coca-cola-zero-limenka.png',
+        image: 'assets/images/coca-cola-zero-limenka.png',
         price: 70
     },
     {
@@ -146,22 +146,22 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Спрајт 0.25',
-        image: '/assets/images/sprite.png',
+        image: 'assets/images/sprite.png',
         price: 90
     },
     {
         name: 'Швепс Битер Лемон 0.25',
-        image: '/assets/images/sveps.png',
+        image: 'assets/images/sveps.png',
         price: 90
     },
     {
         name: 'Швепс танџерина 0.25',
-        image: '/assets/images/sveps-tangerina.png',
+        image: 'assets/images/sveps-tangerina.png',
         price: 90
     },
     {
         name: 'Швепс тоник 0.25',
-        image: '/assets/images/sveps.png',
+        image: 'assets/images/sveps.png',
         price: 90
     },
 ];
@@ -169,27 +169,27 @@ export const nonAlcoholicProducts = [
 export const wineProducts = [
     {
         name: 'СС бленд бело класик 150мл',
-        image: '/assets/images/casa-belo.png',
+        image: 'assets/images/casa-belo.png',
         price: 160
     },
     {
         name: 'СС бленд црвено класик 150мл',
-        image: '/assets/images/casa-crveno.png',
+        image: 'assets/images/casa-crveno.png',
         price: 160
     },
     {
         name: 'Куве александрија розе 187 мл',
-        image: '/assets/images/alexandria-cuve-roze.png',
+        image: 'assets/images/alexandria-cuve-roze.png',
         price: 220
     },
     {
         name: 'Луда мара куве - бело',
-        image: '/assets/images/luda-mara-belo.png',
+        image: 'assets/images/luda-mara-belo.png',
         price: 1100
     },
     {
         name: 'Луда мара куве - црвено',
-        image: '/assets/images/luda-mara-crveno.png',
+        image: 'assets/images/luda-mara-crveno.png',
         price: 1100
     }
 ];
@@ -197,17 +197,17 @@ export const wineProducts = [
 export const beerProducts = [
     {
         name: 'Скопско',
-        image: '/assets/images/skopsko.png',
+        image: 'assets/images/skopsko.png',
         price: 90
     },
     {
         name: 'Скопско смут',
-        image: '/assets/images/skopsko-smooth.png',
+        image: 'assets/images/skopsko-smooth.png',
         price: 90
     },
     {
         name: 'Хајникен',
-        image: '/assets/images/heineken.png',
+        image: 'assets/images/heineken.png',
         price: 110
     }
 ];
@@ -243,12 +243,12 @@ export const hotDrinkProducts = [
 export const waterProducts = [
     {
         name: 'Роса негазирана 0.33',
-        image: '/assets/images/rosa.png',
+        image: 'assets/images/rosa.png',
         price: 70
     },
     {
         name: 'Роса газирана 0.33',
-        image: '/assets/images/rosa-gazirana.png',
+        image: 'assets/images/rosa-gazirana.png',
         price: 70
     }
 ];

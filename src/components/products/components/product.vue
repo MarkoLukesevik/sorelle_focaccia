@@ -5,7 +5,7 @@ const props = defineProps(['product', 'shouldReverse']);
 <template>
     <div class="product">
        <div class="product-image-wrapper">
-            <img class="product-image" :src="props.product.image" />
+            <img v-if="props.product.image" class="product-image" :src="props.product.image" />
        </div>
        <div class="product-name">
             <p>{{ props.product.name }}</p>
@@ -13,7 +13,6 @@ const props = defineProps(['product', 'shouldReverse']);
        </div>
        <div class="product-price">{{ props.product.price }} мкд</div>
     </div>
-
 </template>
 
 <style scoped>
