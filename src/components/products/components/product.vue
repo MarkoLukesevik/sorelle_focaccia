@@ -2,7 +2,7 @@
 const props = defineProps(['product', 'shouldReverse']);
 
 const productImage = (image) => {
-    return image ? `/assets/images/${image}.png` : '';
+    return image ? `assets/images/${image}.png` : '';
 }
 
 </script>

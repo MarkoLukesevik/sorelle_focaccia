@@ -43,7 +43,7 @@ import {
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/sveps.png" />
+                        <img src="" />
                     </div>
                     <p>Глутен</p>
                 </div>
