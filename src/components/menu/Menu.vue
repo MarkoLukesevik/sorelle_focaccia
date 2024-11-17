@@ -36,14 +36,14 @@ import {
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="" />
+                        <img src="/assets/images/milk.png" />
                     </div>
                     <p>Млеко</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="" />
+                        <img src="/assets/images/gluten.png" />
                     </div>
                     <p>Глутен</p>
                 </div>

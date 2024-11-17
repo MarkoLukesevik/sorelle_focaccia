@@ -7,9 +7,8 @@
         <div class="info-border"></div>
 
         <div class="info-content">
-            <div class="info-content-wrapper">
-                <img class="info-content-logo" src="/assets/images/sollere.png" />
-                <p>Животот е комбинација од магија и фокача.</p>
+            <div class="info-logo-wrapper">
+                <img class="info-content-logo" src="/assets/images/logo-with-text.png" />
             </div>
 
             <div class="info-content-wrapper">
@@ -65,15 +64,24 @@
     padding: 0.6rem;
 }
 
+.info-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+
+    width: 100%;
+}
+
+.info-content-logo {
+    width: 50%;
+}
+
 .info-content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 0.3rem;
-}
-
-.info-content-logo {
-    width: 70px;
 }
 
 .info-content__work-time {
@@ -124,6 +132,15 @@
         justify-content: space-between;
         row-gap: 0;
         padding: 0.6rem 0.8rem;
+    }
+
+    .info-logo-wrapper {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .info-content-logo {
+        width: 30%;
     }
 
     .info-content-wrapper {
