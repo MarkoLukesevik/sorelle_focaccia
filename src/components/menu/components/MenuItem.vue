@@ -1,24 +1,22 @@
 <script setup>
-const props = defineProps({
-    product: Object
-});
+const props = defineProps(['menuItem']);
 </script>
 
 <template>
-    <div class="product">
-       <div class="product-image-wrapper">
-            <img v-if="product.image" class="product-image" :src="product.image" />
+    <div class="menu-item">
+       <div class="menu-item-image-wrapper">
+            <img v-if="menuItem.image" class="menu-item-image" :src="menuItem.image" />
        </div>
-       <div class="product-name">
-            <p>{{ product.name }}</p>
-            <span v-if="product.description">{{ product.description }}</span>
+       <div class="menu-item-name">
+            <p>{{ menuItem.name }}</p>
+            <span v-if="menuItem.description">{{ menuItem.description }}</span>
        </div>
-       <div class="product-price">{{ product.price }} мкд</div>
+       <div class="menu-item-price">{{ menuItem.price }} мкд</div>
     </div>
 </template>
 
 <style scoped>
-.product {
+.menu-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +26,7 @@ const props = defineProps({
     width: 100%;
 }
 
-.product-image-wrapper {
+.menu-item-image-wrapper {
     display: flex;
     flex: 0 1 auto;
     align-items: center;
@@ -42,49 +40,57 @@ const props = defineProps({
     height: 60px;
 }
 
-.product-image {
+.menu-item-image {
     height: 100%;
 }
 
-.product-name {
+.menu-item-name {
     flex: 0 1 60%;
 }
 
-.product-name > p {
+.menu-item-name > p {
     color: #626b4e;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
-.product-name > span {
+.menu-item-name > span {
     color: #040205;
     font-size: 0.7rem;
     word-break: normal;
 }
 
-.product-price {
+.menu-item-price {
     color: #040205;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
 @media (min-width: 600px) {
-    .product {
+    .menu-item {
         column-gap: 1rem;
     }
 
-    .product-image-wrapper {
+    .menu-item-image-wrapper {
         height: 75px;
     }
 
-    .product-name {
+    .menu-item-name {
         flex: 0 1 45%;
     }
 }
 
 @media (min-width: 768px) {
-    .product-image-wrapper {
+    .menu-item-image-wrapper {
         height: 100px;
+    }
+
+    .menu-item-name > p {
+        font-size: 1rem;
+    }
+
+    .menu-item-price > span {
+        font-size: 1rem;
     }
 }
 </style>

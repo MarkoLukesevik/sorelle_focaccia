@@ -116,7 +116,7 @@ const activeLinkStyle = (link) => {
     padding: 2.4rem 1rem;
 
     color: #040205;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .sidebar-logo {
@@ -127,6 +127,10 @@ const activeLinkStyle = (link) => {
 @media (min-width: 768px) {
     .sidebar {
         flex: 0 1 235px;
+    }
+
+    .sidebar-links {
+        font-size: 1rem;
     }
 }
 </style>

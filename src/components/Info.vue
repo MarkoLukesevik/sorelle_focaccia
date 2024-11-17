@@ -86,22 +86,22 @@
 
 .info-content__work-time > p {
     color: #626b4e;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .info-content__work-time > span {
     color: #040205;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .info-content__contact > p {
     color: #626b4e;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .info-content__contact > a {
     color: #040205;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
 }
 

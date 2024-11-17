@@ -1,42 +1,42 @@
 <script setup>
 import MenuItem from './components/MenuItem.vue';
 import {
-    sandwichesProducts,
-    supplementsProducts,
-    desertsProducts,
-    alcoholicProducts,
-    nonAlcoholicProducts,
-    wineProducts,
-    beerProducts,
-    hotDrinkProducts,
-    waterProducts
-} from '@/utils/products';
+    sandwichesMenuItems,
+    supplementsMenuItems,
+    desertsMenuItems,
+    alcoholicMenuItems,
+    nonAlcoholicMenuItems,
+    wineMenuItems,
+    beerMenuItems,
+    hotDrinksMenuItems,
+    waterMenuItems
+} from '@/utils/menuItems';
 
 </script>
 
 <template>
-    <div ref="menuItems" class="products">
-        <div ref="sandwiches" class="product-group">
-            <h3 class="product-group-title">Фокача сенвичи</h3>
-            <menu-item v-for="product in sandwichesProducts" :product="product"/>
+    <div ref="menuItems" class="menu">
+        <div ref="sandwiches" class="menu-item-group">
+            <h3 class="menu-item-group-title">Фокача сенвичи</h3>
+            <menu-item v-for="sandwich in sandwichesMenuItems" :menuItem="sandwich"/>
         </div>
 
-        <div ref="supplements" class="product-group">
-            <h3 class="product-group-title">Додатоци</h3>
-            <menu-item v-for="product in supplementsProducts" :product="product"/>
+        <div ref="supplements" class="menu-item-group">
+            <h3 class="menu-item-grouproup-title">Додатоци</h3>
+            <menu-item v-for="supplement in supplementsMenuItems" :menuItem="supplement"/>
         </div>
 
-        <div ref="deserts" class="product-group">
-            <h3 class="product-group-title">Десерти</h3>
-            <menu-item v-for="product in desertsProducts" :product="product"/>
+        <div ref="deserts" class="menu-item-group">
+            <h3 class="menu-item-group-title">Десерти</h3>
+            <menu-item v-for="desert in desertsMenuItems" :menuItem="desert"/>
         </div>
 
-        <div ref="allergens" class="product-group">
-            <h3 class="product-group-title">Алергени</h3>
+        <div ref="allergens" class="menu-item-group">
+            <h3 class="menu-item-group-title">Алергени</h3>
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/sveps.png" />
+                        <img src="" />
                     </div>
                     <p>Млеко</p>
                 </div>
@@ -50,40 +50,40 @@ import {
             </div>
         </div>
 
-        <div ref="alcoholic" class="product-group">
-            <h3 class="product-group-title">Алкохолни пијалоци</h3>
-            <menu-item v-for="product in alcoholicProducts" :product="product"/>
+        <div ref="alcoholic" class="menu-item-group">
+            <h3 class="menu-item-group-title">Алкохолни пијалоци</h3>
+            <menu-item v-for="drink in alcoholicMenuItems" :menuItem="drink"/>
         </div>
 
-        <div ref="nonAlcoholic" class="product-group">
-            <h3 class="product-group-title">Безалкохолни пијалоци</h3>
-            <menu-item v-for="product in nonAlcoholicProducts" :product="product"/>
+        <div ref="nonAlcoholic" class="menu-item-group">
+            <h3 class="menu-item-group-title">Безалкохолни пијалоци</h3>
+            <menu-item v-for="drink in nonAlcoholicMenuItems" :menuItem="drink"/>
         </div>
 
-        <div ref="wine" class="product-group">
-            <h3 class="product-group-title">Вино</h3>
-            <menu-item v-for="product in wineProducts" :product="product"/>
+        <div ref="wine" class="menu-item-group">
+            <h3 class="menu-item-group-title">Вино</h3>
+            <menu-item v-for="wine in wineMenuItems" :menuItem="wine"/>
         </div>
 
-        <div ref="beer" class="product-group">
-            <h3 class="product-group-title">Пиво:</h3>
-            <menu-item v-for="product in beerProducts" :product="product"/>
+        <div ref="beer" class="menu-item-group">
+            <h3 class="menu-item-group-title">Пиво:</h3>
+            <menu-item v-for="beer in beerMenuItems" :menuItem="beer"/>
         </div>
 
-        <div ref="hotDrinks" class="product-group">
-            <h3 class="product-group-title">Топли напитоци:</h3>
-            <menu-item v-for="product) in hotDrinkProducts" :product="product"/>
+        <div ref="hotDrinks" class="menu-item-group">
+            <h3 class="menu-item-group-title">Топли напитоци:</h3>
+            <menu-item v-for="drink) in hotDrinksMenuItems" :menuItem="drink"/>
         </div>
 
-        <div ref="water" class="product-group">
-            <h3 class="product-group-title">Вода</h3>
-            <menu-item v-for="product in waterProducts" :product="product"/>
+        <div ref="water" class="menu-item-group">
+            <h3 class="menu-item-group-title">Вода</h3>
+            <menu-item v-for="water in waterMenuItems" :menuItem="water"/>
         </div>
     </div>
 </template>
 
 <style scoped>
-.products {
+.menu {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ import {
     padding: 2rem 0.8rem;
 }
 
-.product-group {
+.menu-item-group {
     display: flex;
     flex-direction: column;
     flex: 0 1 auto;
@@ -120,10 +120,10 @@ import {
      border-radius: 0.6rem;
 }
 
-.product-group-title {
+.menu-item-group-title {
     color: #be5f54;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
 
     text-transform: uppercase;
@@ -165,58 +165,8 @@ import {
     height: 100%;
 }
 
-.product {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 0.5rem;
-
-    width: 100%;
-}
-
-.product-image-wrapper {
-    display: flex;
-    flex: 0 1 auto;
-    align-items: center;
-    justify-content: center;
-
-    aspect-ratio: 1/1;
-    background-color: #83837b0f;
-    border-radius: 50%;
-    
-    padding: 0.8rem;
-    height: 60px;
-}
-
-.product-image {
-    height: 100%;
-}
-
-.product-name {
-    flex: 0 1 60%;
-}
-
-.product-name > p {
-    color: #626b4e;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.product-name > span {
-    color: #040205;
-    font-size: 0.7rem;
-    word-break: normal;
-}
-
-.product-price {
-    color: #040205;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
 @media (min-width: 600px) {
-    .products {
+    .menu {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -225,45 +175,33 @@ import {
         padding: 2rem;
     }
 
-    .product-group {
+    .menu-item-group {
         flex: 1 1 70%;
 
         width: unset;
     }
 
+    .menu-item-group-title {
+        font-size: 1.2rem;
+    }
+
     .allergen-image-wrapper {
         height: 75px;
-    }
-
-    .product {
-        column-gap: 1rem;
-    }
-
-    .product-image-wrapper {
-        height: 75px;
-    }
-
-    .product-name {
-        flex: 0 1 45%;
     }
 }
 
 @media (min-width: 768px) {
-    .product-group-title {
+    .menu-item-group-title {
         font-size: 1.3rem;
     }
 
     .allergen-image-wrapper {
         height: 100px;
     }
-
-    .product-image-wrapper {
-        height: 100px;
-    }
 }
 
 @media (min-width: 992px) {
-    .product-group {
+    .menu-item-group {
         flex: 0 1 calc(50% - 1rem);
         align-items: flex-start;
     }
