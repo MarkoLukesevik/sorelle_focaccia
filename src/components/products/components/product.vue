@@ -1,5 +1,7 @@
 <script setup>
-const props = defineProps(['product']);
+const props = defineProps({
+    product: Object
+});
 </script>
 
 <template>

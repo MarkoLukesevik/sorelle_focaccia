@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import product from './components/product.vue';
+import product from '@/components/products/components/product.vue';
 
 const sandwichesProducts = ref([
     {
