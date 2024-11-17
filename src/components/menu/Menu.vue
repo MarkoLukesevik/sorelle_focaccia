@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import MenuItem from './components/MenuItem.vue';
 import {
     sandwichesProducts,
@@ -16,7 +15,7 @@ import {
 </script>
 
 <template>
-    <div ref="products" class="products">
+    <div ref="menuItems" class="products">
         <div ref="sandwiches" class="product-group">
             <h3 class="product-group-title">Фокача сенвичи</h3>
             <menu-item v-for="product in sandwichesProducts" :product="product"/>

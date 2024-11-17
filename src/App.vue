@@ -4,13 +4,13 @@ import { ref, onMounted } from 'vue';
 import AppHeader from './components/AppHeader.vue';
 import Sidebar from './components/Sidebar.vue';
 import Info from './components/Info.vue';
-import Products from './components/products/Products.vue';
+import Menu from './components/menu/Menu.vue';
 
 const groups = ['sandwiches', 'deserts', 'supplements', 'allergens', 'alcoholic', 'nonAlcoholic', 'wine', 'beer', 'hotDrinks', 'water'];
 
 const isSidebarOpen = ref(false);
 const activeLink = ref('sandwiches');
-const productsComponentRef = ref(null);
+const menuComponentRef = ref(null);
 const app = ref(null);
 
 const toggleSidebar = () => {
@@ -18,7 +18,7 @@ const toggleSidebar = () => {
 }
 
 const handleLinkClick = (group) => {
-    const foundGroup = productsComponentRef.value.$refs[group];
+    const foundGroup = menuComponentRef.value.$refs[group];
     if (foundGroup) {
         activeLink.value = group;
         toggleSidebar();
@@ -29,7 +29,7 @@ const handleLinkClick = (group) => {
 const checkActiveLink = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
     groups.forEach((group) => {
-        const element = productsComponentRef.value.$refs[group];
+        const element = menuComponentRef.value.$refs[group];
         if (element) {
             const rect = element.getBoundingClientRect();
             if (rect.top <= scrollPosition && rect.bottom > scrollPosition) {
@@ -40,9 +40,9 @@ const checkActiveLink = () => {
 };
 
 onMounted(() => {
-    if (productsComponentRef.value.$refs.products) {
+    if (menuComponentRef.value.$refs.products) {
         app.value.addEventListener('scroll', checkActiveLink);
-        productsComponentRef.value.$refs.products.addEventListener('scroll', checkActiveLink);
+        menuComponentRef.value.$refs.products.addEventListener('scroll', checkActiveLink);
     }
     checkActiveLink();
 });
@@ -58,7 +58,7 @@ onMounted(() => {
                 @toggle-sidebar="toggleSidebar"
                 @handle-link-click="handleLinkClick($event)"
             />
-            <Products ref="productsComponentRef" />
+            <Menu ref="menuComponentRef" />
         </div>
         <info />
     </div>
