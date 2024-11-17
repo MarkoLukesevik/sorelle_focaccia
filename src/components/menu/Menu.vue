@@ -22,7 +22,7 @@ import {
         </div>
 
         <div ref="supplements" class="menu-item-group">
-            <h3 class="menu-item-grouproup-title">Додатоци</h3>
+            <h3 class="menu-item-group-title">Додатоци</h3>
             <menu-item v-for="supplement in supplementsMenuItems" :menuItem="supplement"/>
         </div>
 
@@ -156,9 +156,12 @@ import {
     flex: 0 1 auto;
     align-items: center;
     column-gap: 0.5rem;
+}
 
+.allergen > p {
     color: #5b6b40;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .allergen-image-wrapper {
