@@ -1,5 +1,7 @@
 <script setup>
 const props = defineProps(['product', 'shouldReverse']);
+
+console.log(props.product)
 </script>
 
 <template>
