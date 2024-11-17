@@ -36,14 +36,14 @@ import {
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="" />
+                        <img src="/assets/images/sveps.png" />
                     </div>
                     <p>Млеко</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="" />
+                        <img src="/assets/images/sveps.png" />
                     </div>
                     <p>Глутен</p>
                 </div>
@@ -159,6 +159,10 @@ import {
     
     padding: 0.8rem;
     height: 60px;
+}
+
+.allergen-image-wrapper > img {
+    height: 100%;
 }
 
 @media (min-width: 600px) {
