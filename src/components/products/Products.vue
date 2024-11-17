@@ -262,17 +262,17 @@ const waterProducts = [
     <div ref="products" class="products">
         <div ref="sandwiches" class="product-group">
             <h3 class="product-group-title">Фокача сенвичи</h3>
-            <product v-for="(product, key) in sandwichesProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in sandwichesProducts" :product="product"/>
         </div>
 
         <div ref="supplements" class="product-group">
             <h3 class="product-group-title">Додатоци</h3>
-            <product v-for="(product, key) in supplementsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in supplementsProducts" :product="product"/>
         </div>
 
         <div ref="deserts" class="product-group">
             <h3 class="product-group-title">Десерти</h3>
-            <product v-for="(product, key) in desertsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in desertsProducts" :product="product"/>
         </div>
 
         <div ref="allergens" class="product-group">
@@ -296,32 +296,32 @@ const waterProducts = [
 
         <div ref="alcoholic" class="product-group">
             <h3 class="product-group-title">Алкохолни пијалоци</h3>
-            <product v-for="(product, key) in alcoholicProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in alcoholicProducts" :product="product"/>
         </div>
 
         <div ref="nonAlcoholic" class="product-group">
             <h3 class="product-group-title">Безалкохолни пијалоци</h3>
-            <product v-for="(product, key) in nonAlcoholicProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in nonAlcoholicProducts" :product="product"/>
         </div>
 
         <div ref="wine" class="product-group">
             <h3 class="product-group-title">Вино</h3>
-            <product v-for="(product, key) in wineProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in wineProducts" :product="product"/>
         </div>
 
         <div ref="beer" class="product-group">
             <h3 class="product-group-title">Пиво:</h3>
-            <product v-for="(product, key) in beerProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in beerProducts" :product="product"/>
         </div>
 
         <div ref="hotDrinks" class="product-group">
             <h3 class="product-group-title">Топли напитоци:</h3>
-            <product v-for="(product, key) in hotDrinkProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product) in hotDrinkProducts" :product="product"/>
         </div>
 
         <div ref="water" class="product-group">
             <h3 class="product-group-title">Вода</h3>
-            <product v-for="(product, key) in waterProducts" :product="product" :should-reverse="key % 2 !== 0"/>
+            <product v-for="product in waterProducts" :product="product"/>
         </div>
     </div>
 </template>
