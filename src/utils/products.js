@@ -1,43 +1,43 @@
 export const sandwichesProducts = [
     {
         name: 'Мортези',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 290,
         description: 'мортадела, страчатела, песто, фокача сендвич, маслиново масло'
     },
     {
         name: 'Пршууто',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 310,
         description: 'свинска пршута, рукола, песто, пармезан, фокача сендвич, балсамико крема, маслиново масло'
     },
     {
         name: 'Пршууто биф',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 330,
         description: 'говедска пршута, рукола, песто, пармезан фокача сендвич, балсамико крема, маслиново масло'
     },
     {
         name: 'Тартуфо',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 330,
         description: 'шунка тартуф, намаз од тартуф, страчатела, рукола, фокача сендвич, маслиново масло'
     },
     {
         name: 'Капрезе',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 260,
         description: 'моцарела, песто, босилек, домат, фокача сендвич, балсамико крема, маслиново масло'
     },
     {
         name: 'Веган',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 230,
         description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, фокача сендвич, маслиново масло'
     },
     {
         name: 'Веге',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 250,
         description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, страчатела, фокача сендвич, маслиново масло'
     },
@@ -46,17 +46,17 @@ export const sandwichesProducts = [
 export const supplementsProducts = [
     {
         name: 'Страчатела',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 40
     },
     {
         name: 'Песто',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 30
     },
     {
         name: 'Крем од маслинка',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 20
     },
 ];
@@ -64,7 +64,7 @@ export const supplementsProducts = [
 export const desertsProducts = [
     {
         name: 'Тирамису',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 140,
         description: 'пишкоти, маскарпоне, слатка павлака, еспресо, какао'
     },
@@ -73,47 +73,47 @@ export const desertsProducts = [
 export const alcoholicProducts = [
     {
         name: 'Водка смирноф 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 160
     },
     {
         name: 'Водка абсолут 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 170
     },
     {
         name: 'Џин гордонс 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 160
     },
     {
         name: 'Џин бомбај 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 180
     },
     {
         name: 'Виски џејмисон 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 200
     },
     {
         name: 'Виски џек даниелс 0.4',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 250
     },
     {
         name: 'Јегермајстер 0.5',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 180
     },
     {
         name: 'Кампари 0.6',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 180
     },
     {
         name: 'Аперол 0.6',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 180
     },
 ];
@@ -121,7 +121,7 @@ export const alcoholicProducts = [
 export const nonAlcoholicProducts = [
     {
         name: 'Кока кола лим. 0.33',
-        image: '/assets/images/coca-cola-limenka.png',
+        image: '',
         price: 70
     },
     {
@@ -131,17 +131,17 @@ export const nonAlcoholicProducts = [
     },
     {
         name: 'Кока кола 0.25',
-        image: '/assets/images/coca-cola-zero-limenka.png',
+        image: '',
         price: 90
     },
     {
         name: 'Кока кола зеро 0.25',
-        image: '/assets/images/coca-cola-zero-limenka.png',
+        image: '',
         price: 90
     },
     {
         name: 'Фанта 0.25',
-        image: '/assets/images/fanta.png',
+        image: '',
         price: 90
     },
     {
@@ -215,27 +215,27 @@ export const beerProducts = [
 export const hotDrinkProducts = [
     {
         name: 'Еспресо',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 70
     },
     {
         name: 'Мало макијато',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 70
     },
     {
         name: 'Големо макијато',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 80
     },
     {
         name: 'Капучино',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 80
     },
     {
         name: 'Чај',
-        image: '/assets/images/sveps.png',
+        image: '',
         price: 80
     },
 ];

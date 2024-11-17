@@ -21,7 +21,7 @@ import {
             <product v-for="(product, key) in sandwichesProducts" :product="product" :should-reverse="key % 2 !== 0"/>
         </div>
 
-        <div ref="supplemets" class="product-group">
+        <div ref="supplements" class="product-group">
             <h3 class="product-group-title">Додатоци</h3>
             <product v-for="(product, key) in supplementsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
         </div>
@@ -31,8 +31,23 @@ import {
             <product v-for="(product, key) in desertsProducts" :product="product" :should-reverse="key % 2 !== 0"/>
         </div>
 
-        <div ref="deserts" class="product-group">
+        <div ref="allergens" class="product-group">
             <h3 class="product-group-title">Алергени</h3>
+            <div class="allergens">
+                <div class="allergen">
+                    <div class="allergen-image-wrapper">
+                        <img src="" />
+                    </div>
+                    <p>Млеко</p>
+                </div>
+
+                <div class="allergen">
+                    <div class="allergen-image-wrapper">
+                        <img src="" />
+                    </div>
+                    <p>Глутен</p>
+                </div>
+            </div>
         </div>
 
         <div ref="alcoholic" class="product-group">
@@ -114,6 +129,38 @@ import {
     text-transform: uppercase;
 }
 
+.allergens {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.allergen {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    color: #626b4e;
+    font-size: 1rem;
+}
+
+.allergen-image-wrapper {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 1/1;
+    background-color: #83837b0f;
+    border-radius: 50%;
+    
+    padding: 0.8rem;
+    height: 60px;
+}
+
 @media (min-width: 600px) {
     .products {
         flex-direction: row;
@@ -129,11 +176,19 @@ import {
 
         width: unset;
     }
+
+    .allergen-image-wrapper {
+        height: 75px;
+    }
 }
 
 @media (min-width: 768px) {
     .product-group-title {
         font-size: 1.3rem;
+    }
+
+    .allergen-image-wrapper {
+        height: 100px;
     }
 }
 

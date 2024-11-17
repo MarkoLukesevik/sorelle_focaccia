@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar.vue';
 import Info from './components/Info.vue';
 import Products from './components/products/Products.vue';
 
-const groups = ['sandwiches', 'deserts', 'supplements', 'alcoholic', 'nonAlcoholic', 'wine', 'beer', 'hotDrinks', 'water'];
+const groups = ['sandwiches', 'deserts', 'supplements', 'allergens', 'alcoholic', 'nonAlcoholic', 'wine', 'beer', 'hotDrinks', 'water'];
 
 const isSidebarOpen = ref(false);
 const activeLink = ref('sandwiches');
@@ -17,13 +17,12 @@ const toggleSidebar = () => {
     isSidebarOpen.value = !isSidebarOpen.value;
 }
 
-const handleLinkClick = (section) => {
-    const foundSection = document.getElementById(section);
-
-    if (foundSection) {
-        activeLink.value = section;
+const handleLinkClick = (group) => {
+    const foundGroup = productsComponentRef.value.$refs[group];
+    if (foundGroup) {
+        activeLink.value = group;
         toggleSidebar();
-        foundSection.scrollIntoView({ behavior: 'smooth',  block: 'start' });
+        foundGroup.scrollIntoView({ behavior: 'smooth',  block: 'start' });
     }
 }
 

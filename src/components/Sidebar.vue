@@ -26,6 +26,7 @@ const activeLinkStyle = (link) => {
             <li :style="activeLinkStyle('sandwiches')" @click="emit('handle-link-click', 'sandwiches')">Фокача сендвичи</li>
             <li :style="activeLinkStyle('supplements')" @click="emit('handle-link-click', 'supplements')">Додатоци</li>
             <li :style="activeLinkStyle('deserts')" @click="emit('handle-link-click', 'deserts')">Десерти</li>
+            <li :style="activeLinkStyle('allergens')" @click="emit('handle-link-click', 'allergens')">Алергени</li>
             <li :style="activeLinkStyle('alcoholic')" @click="emit('handle-link-click', 'alcoholic')">Алкохолни пијалоци</li>
             <li :style="activeLinkStyle('nonAlcoholic')" @click="emit('handle-link-click', 'nonAlcoholic')">Безалкохолни пијалоци</li>
             <li :style="activeLinkStyle('wine')" @click="emit('handle-link-click', 'wine')">Вино</li>
