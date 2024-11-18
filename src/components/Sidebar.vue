@@ -39,7 +39,7 @@ const activeLinkStyle = (link) => {
 
 <style scoped>
 .sidebar{
-    position: absolute;
+    position: fixed;
     top: 9vh;
     top: 9dvh;
     bottom: 0;
