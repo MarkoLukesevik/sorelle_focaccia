@@ -69,7 +69,7 @@ import {
             <menu-item v-for="drink in alcoholicMenuItems" :menuItem="drink"/>
         </div>
 
-        <div ref="nonAlcoholic" class="menu-item-group">
+        <div ref="softDrinks" class="menu-item-group">
             <h3 class="menu-item-group-title">{{ $t("softDrinks") }}</h3>
             <menu-item v-for="drink in softDrinksMenuItems" :menuItem="drink"/>
         </div>
