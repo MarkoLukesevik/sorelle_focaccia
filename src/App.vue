@@ -33,7 +33,16 @@ const handleLinkClick = (group) => {
     if (foundGroup) {
         activeLink.value = group;
         toggleSidebar();
-        foundGroup.scrollIntoView({ behavior: 'smooth',  block: 'start' });
+       
+        if (window.innerWidth < 600) {
+            app.value.scrollTo({
+                top: foundGroup.offsetTop - 100,
+                behavior: 'smooth',
+            })
+        } else {
+            foundGroup.scrollIntoView({ behavior: 'smooth',  block: 'start' });
+        }
+
     }
 }
 
@@ -51,9 +60,9 @@ const checkActiveLink = () => {
 };
 
 onMounted(() => {
-    if (menuComponentRef.value.$refs.products) {
+    if (menuComponentRef.value.$refs.menuItems) {
         app.value.addEventListener('scroll', checkActiveLink);
-        menuComponentRef.value.$refs.products.addEventListener('scroll', checkActiveLink);
+        menuComponentRef.value.$refs.menuItems.addEventListener('scroll', checkActiveLink);
     }
     checkActiveLink();
 });
