@@ -11,7 +11,7 @@ const props = defineProps(['menuItem']);
             <p>{{ $t(menuItem.name) }}</p>
             <span v-if="menuItem.description">{{ $t(menuItem.description) }}</span>
        </div>
-       <div class="menu-item-price">{{ menuItem.price }} мкд</div>
+       <div class="menu-item-price">{{ menuItem.price }} {{ $t("mkd") }}</div>
     </div>
 </template>
 
