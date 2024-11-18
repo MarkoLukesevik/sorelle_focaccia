@@ -102,6 +102,14 @@
     font-size: 0.9rem;
 }
 
+.info-content__contact {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    align-items: center;
+    row-gap: 0.1rem;
+}
+
 .info-content__contact > p {
     color: #5b6b40;
     font-size: 1rem;
@@ -149,6 +157,10 @@
     }
 
     .info-content__work-time {
+        align-items: flex-start;
+    }
+
+    .info-content__contact {
         align-items: flex-start;
     }
 

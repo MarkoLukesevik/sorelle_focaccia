@@ -1,45 +1,45 @@
 export const sandwichesMenuItems = [
     {
-        name: 'Мортези',
+        name: 'mortetzi',
         image: '',
         price: 290,
-        description: 'мортадела, страчатела, песто, фокача сендвич, маслиново масло'
+        description: 'mortetziDesc'
     },
     {
-        name: 'Пршууто',
+        name: 'prosciutto',
         image: '',
         price: 310,
-        description: 'свинска пршута, рукола, песто, пармезан, фокача сендвич, балсамико крема, маслиново масло'
+        description: 'prosciuttoDesc'
     },
     {
-        name: 'Пршууто биф',
+        name: 'prosciuttoBeef',
         image: '',
         price: 330,
-        description: 'говедска пршута, рукола, песто, пармезан фокача сендвич, балсамико крема, маслиново масло'
+        description: 'prosciuttoBeefDesc'
     },
     {
-        name: 'Тартуфо',
+        name: 'truffle',
         image: '',
         price: 330,
-        description: 'шунка тартуф, намаз од тартуф, страчатела, рукола, фокача сендвич, маслиново масло'
+        description: 'truffleDesc'
     },
     {
-        name: 'Капрезе',
+        name: 'caprese',
         image: '',
         price: 260,
-        description: 'моцарела, песто, босилек, домат, фокача сендвич, балсамико крема, маслиново масло'
+        description: 'capreseDesc'
     },
     {
-        name: 'Веган',
+        name: 'vegan',
         image: '',
         price: 230,
-        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, фокача сендвич, маслиново масло'
+        description: 'veganDesc'
     },
     {
-        name: 'Веге',
+        name: 'vegetarian',
         image: '',
         price: 250,
-        description: 'крем од маслинки, печен зеленчук, тиквички, модал домат, пиперка, сув домат, страчатела, фокача сендвич, маслиново масло'
+        description: 'vegetarianDesc'
     },
 ];
 
@@ -72,47 +72,47 @@ export const desertsMenuItems = [
 
 export const alcoholicMenuItems = [
     {
-        name: 'Водка смирноф 0.4',
+        name: 'vodkaSmirnoff',
         image: '/assets/images/alcoholic/smirnoff.png',
         price: 160
     },
     {
-        name: 'Водка абсолут 0.4',
+        name: 'vodkaAbsolut',
         image: '/assets/images/alcoholic/absolut.png',
         price: 170
     },
     {
-        name: 'Џин гордонс 0.4',
+        name: 'ginGordons',
         image: '/assets/images/alcoholic/gordons.png',
         price: 160
     },
     {
-        name: 'Џин бомбај 0.4',
+        name: 'ginBombay',
         image: '/assets/images/alcoholic/bombay.png',
         price: 180
     },
     {
-        name: 'Виски џејмисон 0.4',
+        name: 'whiskeyJameson',
         image: '/assets/images/alcoholic/jameson.png',
         price: 200
     },
     {
-        name: 'Виски џек даниелс 0.4',
+        name: 'whiskeyJack',
         image: '/assets/images/alcoholic/jack.png',
         price: 250
     },
     {
-        name: 'Јегермајстер 0.5',
+        name: 'jeger',
         image: '/assets/images/alcoholic/jeger.png',
         price: 180
     },
     {
-        name: 'Кампари 0.6',
+        name: 'campari',
         image: '/assets/images/alcoholic/campari.png',
         price: 180
     },
     {
-        name: 'Аперол 0.6',
+        name: 'aperol',
         image: '/assets/images/alcoholic/aperol.png',
         price: 180
     },
@@ -120,47 +120,47 @@ export const alcoholicMenuItems = [
 
 export const softDrinksMenuItems = [
     {
-        name: 'Кока кола 0.33',
+        name: 'cocaColaCan',
         image: '/assets/images/softDrinks/coca-cola-limenka.png',
         price: 70
     },
     {
-        name: 'Кока кола зеро 0.33',
+        name: 'cocaColaZeroCan',
         image: '/assets/images/softDrinks/coca-cola-zero-limenka.png',
         price: 70
     },
     {
-        name: 'Кока кола 0.25',
+        name: 'cocaCola',
         image: '/assets/images/softDrinks/coca-cola-staklo.png',
         price: 90
     },
     {
-        name: 'Кока кола зеро 0.25',
+        name: 'cocaColaZero5',
         image: '/assets/images/softDrinks/coca-cola-zero-staklo.png',
         price: 90
     },
     {
-        name: 'Фанта 0.25',
+        name: 'fanta',
         image: '/assets/images/softDrinks/fanta.png',
         price: 90
     },
     {
-        name: 'Спрајт 0.25',
+        name: 'sprite',
         image: 'assets/images/softDrinks/sprite.png',
         price: 90
     },
     {
-        name: 'Швепс Битер Лемон 0.25',
+        name: 'schweppes',
         image: '/assets/images/softDrinks/sveps.png',
         price: 90
     },
     {
-        name: 'Швепс танџерина 0.25',
+        name: 'schweppesTangerine',
         image: '/assets/images/softDrinks/sveps-tangerina.png',
         price: 90
     },
     {
-        name: 'Швепс тоник 0.25',
+        name: 'schweppesTonic',
         image: '/assets/images/softDrinks/tonik.png',
         price: 90
     },
@@ -168,27 +168,27 @@ export const softDrinksMenuItems = [
 
 export const wineMenuItems = [
     {
-        name: 'СС бленд бело класик 150мл',
+        name: 'blendWhiteClassic',
         image: 'assets/images/wine/casa-belo.png',
         price: 160
     },
     {
-        name: 'СС бленд црвено класик 150мл',
+        name: 'blendRedClassic',
         image: 'assets/images/wine/casa-crveno.png',
         price: 160
     },
     {
-        name: 'Куве александрија розе 187 мл',
+        name: 'cuveAlexandriaRose',
         image: 'assets/images/wine/roze.png',
         price: 220
     },
     {
-        name: 'Луда мара куве - бело',
+        name: 'ludaMaraWhite',
         image: 'assets/images/wine/luda-mara-belo.png',
         price: 1100
     },
     {
-        name: 'Луда мара куве - црвено',
+        name: 'ludaMaraRed',
         image: 'assets/images/wine/luda-mara-crveno.png',
         price: 1100
     }

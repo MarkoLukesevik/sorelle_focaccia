@@ -95,6 +95,7 @@ const handleChange = () => {
     position: relative;
     width: 50px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .check::before {
@@ -126,7 +127,6 @@ const handleChange = () => {
     content: '';
     background-image: url('/assets/images/mk-flag.png');
     left: 20px;
-
 }
 
 @media (min-width: 600px) {
