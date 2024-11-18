@@ -5,7 +5,7 @@ import {
     supplementsMenuItems,
     desertsMenuItems,
     alcoholicMenuItems,
-    nonAlcoholicMenuItems,
+    softDrinksMenuItems,
     wineMenuItems,
     beerMenuItems,
     hotDrinksMenuItems,
@@ -17,80 +17,80 @@ import {
 <template>
     <div ref="menuItems" class="menu">
         <div ref="sandwiches" class="menu-item-group">
-            <h3 class="menu-item-group-title">Фокача сенвичи</h3>
+            <h3 class="menu-item-group-title">{{ $t("focacciaSandwiches") }}</h3>
             <menu-item v-for="sandwich in sandwichesMenuItems" :menuItem="sandwich"/>
         </div>
 
         <div ref="supplements" class="menu-item-group">
-            <h3 class="menu-item-group-title">Додатоци</h3>
+            <h3 class="menu-item-group-title">{{ $t("sauces") }}</h3>
             <menu-item v-for="supplement in supplementsMenuItems" :menuItem="supplement"/>
         </div>
 
         <div ref="deserts" class="menu-item-group">
-            <h3 class="menu-item-group-title">Десерти</h3>
+            <h3 class="menu-item-group-title">{{ $t("deserts") }}</h3>
             <menu-item v-for="desert in desertsMenuItems" :menuItem="desert"/>
         </div>
 
         <div ref="allergens" class="menu-item-group">
-            <h3 class="menu-item-group-title">Алергени</h3>
+            <h3 class="menu-item-group-title">{{ $t("allergens") }}</h3>
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
                         <img src="/assets/images/allergens/milk.png" />
                     </div>
-                    <p>Млеко</p>
+                    <p>{{ $t("milk") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
                         <img src="/assets/images/allergens/gluten.png" />
                     </div>
-                    <p>Глутен</p>
+                    <p>{{ $t("gluten") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
                         <img src="/assets/images/allergens/egg.png" />
                     </div>
-                    <p>Јајца</p>
+                    <p>{{ $t("eggs") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
                         <img src="/assets/images/allergens/peanut.png" />
                     </div>
-                    <p>Јаткасти</p>
+                    <p>{{ $t("nuts") }}</p>
                 </div>
             </div>
         </div>
 
         <div ref="alcoholic" class="menu-item-group">
-            <h3 class="menu-item-group-title">Алкохолни пијалоци</h3>
+            <h3 class="menu-item-group-title">А{{ $t("alcoholicBeverages") }}</h3>
             <menu-item v-for="drink in alcoholicMenuItems" :menuItem="drink"/>
         </div>
 
         <div ref="nonAlcoholic" class="menu-item-group">
-            <h3 class="menu-item-group-title">Безалкохолни пијалоци</h3>
-            <menu-item v-for="drink in nonAlcoholicMenuItems" :menuItem="drink"/>
+            <h3 class="menu-item-group-title">{{ $t("softDrinks") }}</h3>
+            <menu-item v-for="drink in softDrinksMenuItems" :menuItem="drink"/>
         </div>
 
         <div ref="wine" class="menu-item-group">
-            <h3 class="menu-item-group-title">Вино</h3>
+            <h3 class="menu-item-group-title">{{ $t("wine") }}</h3>
             <menu-item v-for="wine in wineMenuItems" :menuItem="wine"/>
         </div>
 
         <div ref="beer" class="menu-item-group">
-            <h3 class="menu-item-group-title">Пиво:</h3>
+            <h3 class="menu-item-group-title">{{ $t("beer") }}</h3>
             <menu-item v-for="beer in beerMenuItems" :menuItem="beer"/>
         </div>
 
         <div ref="hotDrinks" class="menu-item-group">
-            <h3 class="menu-item-group-title">Топли напитоци:</h3>
+            <h3 class="menu-item-group-title">{{ $t("hotDrinks") }}</h3>
             <menu-item v-for="drink) in hotDrinksMenuItems" :menuItem="drink"/>
         </div>
 
         <div ref="water" class="menu-item-group">
-            <h3 class="menu-item-group-title">Вода</h3>
+            <h3 class="menu-item-group-title">{{ $t("water") }}</h3>
             <menu-item v-for="water in waterMenuItems" :menuItem="water"/>
         </div>
     </div>

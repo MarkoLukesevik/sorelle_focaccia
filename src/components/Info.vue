@@ -13,11 +13,11 @@
 
             <div class="info-content-wrapper">
                 <div class="info-content__work-time">
-                    <p>Понеделник-Петок</p>
+                    <p>{{ $t('mondayFriday') }}</p>
                     <span>08:30-16:30</span>
                 </div>
                 <div class="info-content__contact">
-                    <p>Контакт/тел.</p>
+                    <p>{{ $t('contactTel') }}</p>
                     <a href="tel:+38977222758">077 222 758</a>
                 </div>
                 <div class="info-content__icons">

@@ -23,16 +23,16 @@ const activeLinkStyle = (link) => {
         <div class="sidebar-border"></div>
         <div class="sidebar-logo"></div>
         <ul class="sidebar-links">
-            <li :style="activeLinkStyle('sandwiches')" @click="emit('handle-link-click', 'sandwiches')">Фокача сендвичи</li>
-            <li :style="activeLinkStyle('supplements')" @click="emit('handle-link-click', 'supplements')">Додатоци</li>
-            <li :style="activeLinkStyle('deserts')" @click="emit('handle-link-click', 'deserts')">Десерти</li>
-            <li :style="activeLinkStyle('allergens')" @click="emit('handle-link-click', 'allergens')">Алергени</li>
-            <li :style="activeLinkStyle('alcoholic')" @click="emit('handle-link-click', 'alcoholic')">Алкохолни пијалоци</li>
-            <li :style="activeLinkStyle('nonAlcoholic')" @click="emit('handle-link-click', 'nonAlcoholic')">Безалкохолни пијалоци</li>
-            <li :style="activeLinkStyle('wine')" @click="emit('handle-link-click', 'wine')">Вино</li>
-            <li :style="activeLinkStyle('beer')" @click="emit('handle-link-click', 'beer')">Пиво</li>
-            <li :style="activeLinkStyle('hotDrinks')" @click="emit('handle-link-click', 'hotDrinks')">Топли напитоци</li>
-            <li :style="activeLinkStyle('water')" @click="emit('handle-link-click', 'water')">Вода</li>
+            <li :style="activeLinkStyle('sandwiches')" @click="emit('handle-link-click', 'sandwiches')">{{ $t("focacciaSandwiches") }}</li>
+            <li :style="activeLinkStyle('supplements')" @click="emit('handle-link-click', 'supplements')">{{ $t("sauces") }}</li>
+            <li :style="activeLinkStyle('deserts')" @click="emit('handle-link-click', 'deserts')">{{ $t("deserts") }}</li>
+            <li :style="activeLinkStyle('allergens')" @click="emit('handle-link-click', 'allergens')">{{ $t("allergens") }}</li>
+            <li :style="activeLinkStyle('alcoholic')" @click="emit('handle-link-click', 'alcoholic')">{{ $t("alcoholicBeverages") }}</li>
+            <li :style="activeLinkStyle('softDrinks')" @click="emit('handle-link-click', 'softDrinks')">{{ $t("softDrinks") }}</li>
+            <li :style="activeLinkStyle('wine')" @click="emit('handle-link-click', 'wine')">{{ $t("wine") }}</li>
+            <li :style="activeLinkStyle('beer')" @click="emit('handle-link-click', 'beer')">{{ $t("beer") }}</li>
+            <li :style="activeLinkStyle('hotDrinks')" @click="emit('handle-link-click', 'hotDrinks')">{{ $t("hotDrinks") }}</li>
+            <li :style="activeLinkStyle('water')" @click="emit('handle-link-click', 'water')">{{ $t("water") }}</li>
         </ul>
     </div>
 </template>

@@ -45,17 +45,17 @@ export const sandwichesMenuItems = [
 
 export const supplementsMenuItems = [
     {
-        name: 'Страчатела',
+        name: 'strachatella',
         image: '',
         price: 40
     },
     {
-        name: 'Песто',
+        name: 'pesto',
         image: '',
         price: 30
     },
     {
-        name: 'Крем од маслинка',
+        name: 'oliveCream',
         image: '',
         price: 20
     },
@@ -63,10 +63,10 @@ export const supplementsMenuItems = [
 
 export const desertsMenuItems = [
     {
-        name: 'Тирамису',
+        name: 'tiramisu',
         image: '',
         price: 140,
-        description: 'пишкоти, маскарпоне, слатка павлака, еспресо, какао'
+        description: 'tiramisuDescription'
     },
 ];
 
@@ -118,50 +118,50 @@ export const alcoholicMenuItems = [
     },
 ];
 
-export const nonAlcoholicMenuItems = [
+export const softDrinksMenuItems = [
     {
-        name: 'Кока кола лим. 0.33',
-        image: '/assets/images/nonAlcoholic/coca-cola-limenka.png',
+        name: 'Кока кола 0.33',
+        image: '/assets/images/softDrinks/coca-cola-limenka.png',
         price: 70
     },
     {
-        name: 'Кока кола зеро лим. 0.33',
-        image: '/assets/images/nonAlcoholic/coca-cola-zero-limenka.png',
+        name: 'Кока кола зеро 0.33',
+        image: '/assets/images/softDrinks/coca-cola-zero-limenka.png',
         price: 70
     },
     {
         name: 'Кока кола 0.25',
-        image: '/assets/images/nonAlcoholic/coca-cola-staklo.png',
+        image: '/assets/images/softDrinks/coca-cola-staklo.png',
         price: 90
     },
     {
         name: 'Кока кола зеро 0.25',
-        image: '/assets/images/nonAlcoholic/coca-cola-zero-staklo.png',
+        image: '/assets/images/softDrinks/coca-cola-zero-staklo.png',
         price: 90
     },
     {
         name: 'Фанта 0.25',
-        image: '/assets/images/nonAlcoholic/fanta.png',
+        image: '/assets/images/softDrinks/fanta.png',
         price: 90
     },
     {
         name: 'Спрајт 0.25',
-        image: 'assets/images/nonAlcoholic/sprite.png',
+        image: 'assets/images/softDrinks/sprite.png',
         price: 90
     },
     {
         name: 'Швепс Битер Лемон 0.25',
-        image: '/assets/images/nonAlcoholic/sveps.png',
+        image: '/assets/images/softDrinks/sveps.png',
         price: 90
     },
     {
         name: 'Швепс танџерина 0.25',
-        image: '/assets/images/nonAlcoholic/sveps-tangerina.png',
+        image: '/assets/images/softDrinks/sveps-tangerina.png',
         price: 90
     },
     {
         name: 'Швепс тоник 0.25',
-        image: '/assets/images/nonAlcoholic/tonik.png',
+        image: '/assets/images/softDrinks/tonik.png',
         price: 90
     },
 ];
@@ -196,17 +196,17 @@ export const wineMenuItems = [
 
 export const beerMenuItems = [
     {
-        name: 'Скопско',
+        name: 'skopsko',
         image: 'assets/images/beer/skopsko.png',
         price: 90
     },
     {
-        name: 'Скопско смут',
+        name: 'skopskoSmooth',
         image: 'assets/images/beer/skopsko-smooth.png',
         price: 90
     },
     {
-        name: 'Хајникен',
+        name: 'heineken',
         image: 'assets/images/beer/heineken.png',
         price: 110
     }
@@ -214,27 +214,27 @@ export const beerMenuItems = [
 
 export const hotDrinksMenuItems = [
     {
-        name: 'Еспресо',
+        name: 'espresso',
         image: '/assets/images/hotDrinks/espresso.png',
         price: 70
     },
     {
-        name: 'Мало макијато',
+        name: 'machiato',
         image: '/assets/images/hotDrinks/macchiato.png',
         price: 70
     },
     {
-        name: 'Големо макијато',
+        name: 'machiatoSmall',
         image: '/assets/images/hotDrinks/macchiato.png',
         price: 80
     },
     {
-        name: 'Капучино',
+        name: 'cappuccino',
         image: '/assets/images/hotDrinks/capucino.png',
         price: 80
     },
     {
-        name: 'Чај',
+        name: 'tea',
         image: '/assets/images/hotDrinks/tea.png',
         price: 80
     },
@@ -242,12 +242,12 @@ export const hotDrinksMenuItems = [
 
 export const waterMenuItems = [
     {
-        name: 'Роса негазирана 0.33',
+        name: 'rosa',
         image: 'assets/images/water/rosa.png',
         price: 70
     },
     {
-        name: 'Роса газирана 0.33',
+        name: 'rosaSparkling',
         image: 'assets/images/water/rosa-gazirana.png',
         price: 70
     }

@@ -1,0 +1,40 @@
+{
+    "contactTel": "Контакт/тел.",
+    "mondayFriday": "Понеделник-Петок",
+
+    "focacciaSandwiches": "Фокача сендвичи",
+    "sauces": "Додатоци",
+    "deserts": "Десерти",
+    "allergens": "Алергени",
+    "alcoholicBeverages": "Алкохолни пијалоци",
+    "softDrinks": "Безалкохолни пијалоци",
+    "wine": "Вино",
+    "beer": "Пиво",
+    "hotDrinks": "Топли напитоци",
+    "water": "Вода",
+
+    "gluten": "Глутен",
+    "milk": "Млеко",
+    "eggs": "Јајца",
+    "nuts": "Јаткасти",
+
+    "tiramisu": "Тирамису",
+    "tiramisuDescription": "пишкоти, маскарпоне, слатка павлака, еспресо, какао",
+
+    "strachatella": "Страчатела",
+    "pesto": "Песто",
+    "oliveCream": "Крем од маслинка",
+
+    "skopsko": "Скопско",
+    "skopskoSmooth": "Скопско смут",
+    "heineken": "Хајникен",
+
+    "rosa": "Роса негазирана 0.33",
+    "rosaSparkling": "Роса газирана 0.33",
+
+    "espresso": "Еспресо",
+    "machiato": "Mакијато",
+    "machiatoSmall": "Мало макијато",
+    "cappuccino": "Kапучино",
+    "tea": "Чај"
+}

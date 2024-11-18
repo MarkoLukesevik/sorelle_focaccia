@@ -1,0 +1,40 @@
+{
+    "contactTel": "Contact/tel.",
+    "mondayFriday": "Monday-Friday",
+
+    "focacciaSandwiches": "Focaccia sandwiches",
+    "sauces": "Sauces",
+    "deserts": "Deserts",
+    "allergens": "Allergens",
+    "alcoholicBeverages": "Alcoholic beverages",
+    "softDrinks": "Soft drinks",
+    "wine": "Wine",
+    "beer": "Beer",
+    "hotDrinks": "Hot drinks",
+    "water": "Water",
+
+    "gluten": "Gluten",
+    "milk": "Milk",
+    "eggs": "Eggs",
+    "nuts": "Nuts",
+
+    "tiramisu": "Tiramisu",
+    "tiramisuDescription": "biscuits, mascarpone, sweet cream, espresso, cocoa",
+
+    "strachatella": "Strachatella",
+    "pesto": "Pesto",
+    "oliveCream": "Olive cream",
+
+    "skopsko": "Skopsko",
+    "skopskoSmooth": "Skopsko smooth",
+    "heineken": "Heineken",
+
+    "rosa": "Rosa 0.33",
+    "rosaSparkling": "Rosa sparkling 0.33",
+
+    "espresso": "Espresso",
+    "machiato": "Macchiato",
+    "machiatoSmall": "Small macchiato",
+    "cappuccino": "cappuccino",
+    "tea": "Tea"
+}

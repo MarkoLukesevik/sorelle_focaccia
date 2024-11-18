@@ -8,8 +8,8 @@ const props = defineProps(['menuItem']);
             <img v-if="menuItem.image" class="menu-item-image" :src="menuItem.image" />
        </div>
        <div class="menu-item-name">
-            <p>{{ menuItem.name }}</p>
-            <span v-if="menuItem.description">{{ menuItem.description }}</span>
+            <p>{{ $t(menuItem.name) }}</p>
+            <span v-if="menuItem.description">{{ $t(menuItem.description) }}</span>
        </div>
        <div class="menu-item-price">{{ menuItem.price }} мкд</div>
     </div>

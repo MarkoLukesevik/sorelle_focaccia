@@ -6,7 +6,18 @@ import Sidebar from './components/Sidebar.vue';
 import Info from './components/Info.vue';
 import Menu from './components/menu/Menu.vue';
 
-const groups = ['sandwiches', 'deserts', 'supplements', 'allergens', 'alcoholic', 'nonAlcoholic', 'wine', 'beer', 'hotDrinks', 'water'];
+const groups = [
+    'sandwiches',
+    'deserts', 
+    'supplements',
+    'allergens',
+    'alcoholic',
+    'softDrinks',
+    'wine',
+    'beer',
+    'hotDrinks',
+    'water'
+];
 
 const isSidebarOpen = ref(false);
 const activeLink = ref('sandwiches');
