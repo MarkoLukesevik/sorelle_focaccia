@@ -35,8 +35,9 @@ const handleLinkClick = (group) => {
         toggleSidebar();
        
         if (window.innerWidth < 600) {
+            const offset = (window.innerHeight * 15) / 100;
             app.value.scrollTo({
-                top: foundGroup.offsetTop - 100,
+                top: foundGroup.offsetTop - offset,
                 behavior: 'smooth',
             })
         } else {
