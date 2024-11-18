@@ -219,12 +219,12 @@ export const hotDrinksMenuItems = [
         price: 70
     },
     {
-        name: 'machiato',
+        name: 'machiatoSmall',
         image: '/assets/images/hotDrinks/macchiato.png',
         price: 70
     },
     {
-        name: 'machiatoSmall',
+        name: 'machiato',
         image: '/assets/images/hotDrinks/macchiato.png',
         price: 80
     },
