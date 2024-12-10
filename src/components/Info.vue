@@ -8,7 +8,7 @@
 
         <div class="info-content">
             <div class="info-logo-wrapper">
-                <img class="info-content-logo" src="/assets/images/logo-with-text.png" />
+                <img class="info-content-logo" src="/assets/images/logo-with-text.png" alt="" />
             </div>
 
             <div class="info-content-wrapper">
@@ -22,10 +22,10 @@
                 </div>
                 <div class="info-content__icons">
                     <a href="https://maps.app.goo.gl/2C32+79J?fbclid=PAZXh0bgNhZW0CMTEAAaa6yJlHaNfBpm_HGxoD9AZzoK_X4Yx0hTed54S7PR26iFYTtzg3S1ivNJ4_aem_HyapnhWtQzKrVOO81pUDiw" target="_blank">
-                        <img class="info-img" src="/assets/images/location.png" />
+                        <img class="info-img" src="/assets/images/location.png" alt="" />
                     </a>
                     <a href="https://www.instagram.com/sorelle_focaccia/" target="_blank">
-                        <img class="info-img" src="/assets/images/instagram.png" />
+                        <img class="info-img" src="/assets/images/instagram.png" alt="" />
                     </a>
                 </div>
             </div>

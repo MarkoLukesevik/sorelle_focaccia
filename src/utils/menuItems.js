@@ -1,43 +1,43 @@
 export const sandwichesMenuItems = [
     {
         name: 'mortetzi',
-        image: '',
+        image: '/assets/images/food/mortetzi.png',
         price: 290,
         description: 'mortetziDesc'
     },
     {
         name: 'prosciutto',
-        image: '',
+        image: '/assets/images/food/prosciutto.png',
         price: 310,
         description: 'prosciuttoDesc'
     },
     {
         name: 'prosciuttoBeef',
-        image: '',
+        image: '/assets/images/food/prosciuttoBeef.png',
         price: 330,
         description: 'prosciuttoBeefDesc'
     },
     {
         name: 'truffle',
-        image: '',
+        image: '/assets/images/food/truffle.png',
         price: 330,
         description: 'truffleDesc'
     },
     {
         name: 'caprese',
-        image: '',
+        image: '/assets/images/food/caprese.png',
         price: 260,
         description: 'capreseDesc'
     },
     {
         name: 'vegan',
-        image: '',
+        image: '/assets/images/food/vegan.png',
         price: 230,
         description: 'veganDesc'
     },
     {
         name: 'vegetarian',
-        image: '',
+        image: '/assets/images/food/vege.png',
         price: 250,
         description: 'vegetarianDesc'
     },

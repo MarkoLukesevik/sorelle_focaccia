@@ -36,28 +36,28 @@ import {
             <div class="allergens">
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/allergens/milk.png" />
+                        <img src="/assets/images/allergens/milk.png" alt="" />
                     </div>
                     <p>{{ $t("milk") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/allergens/gluten.png" />
+                        <img src="/assets/images/allergens/gluten.png" alt="" />
                     </div>
                     <p>{{ $t("gluten") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/allergens/egg.png" />
+                        <img src="/assets/images/allergens/egg.png" alt="" />
                     </div>
                     <p>{{ $t("eggs") }}</p>
                 </div>
 
                 <div class="allergen">
                     <div class="allergen-image-wrapper">
-                        <img src="/assets/images/allergens/peanut.png" />
+                        <img src="/assets/images/allergens/peanut.png" alt="" />
                     </div>
                     <p>{{ $t("nuts") }}</p>
                 </div>
@@ -86,7 +86,7 @@ import {
 
         <div ref="hotDrinks" class="menu-item-group">
             <h3 class="menu-item-group-title">{{ $t("hotDrinks") }}</h3>
-            <menu-item v-for="drink) in hotDrinksMenuItems" :menuItem="drink"/>
+            <menu-item v-for="drink in hotDrinksMenuItems" :menuItem="drink"/>
         </div>
 
         <div ref="water" class="menu-item-group">

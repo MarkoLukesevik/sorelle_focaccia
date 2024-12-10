@@ -21,9 +21,10 @@ const handleChange = () => {
             <img
                 class="header-content-hamburger"
                 src="/assets/images/menu.png"
+                alt=""
                 @click="emit('toggle-sidebar')"
             />
-            <img class="header-content-logo" src="/assets/images/logo-with-text.png" />
+            <img class="header-content-logo" src="/assets/images/logo-with-text.png" alt="" />
             <div class="header-content__lang-toggle">
                 <input type="checkbox" v-model="isMk" class="check" @change="handleChange" />
             </div>

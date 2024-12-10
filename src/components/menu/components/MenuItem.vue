@@ -4,13 +4,15 @@ const props = defineProps(['menuItem']);
 
 <template>
     <div class="menu-item">
-       <div class="menu-item-image-wrapper">
-            <img v-if="menuItem.image" class="menu-item-image" :src="menuItem.image" />
-       </div>
-       <div class="menu-item-name">
-            <p>{{ $t(menuItem.name) }}</p>
-            <span v-if="menuItem.description">{{ $t(menuItem.description) }}</span>
-       </div>
+      <div class="menu-item-wrapper">
+         <div class="menu-item-image-wrapper" v-if="menuItem.image">
+              <img class="menu-item-image" :src="menuItem.image" alt="" />
+         </div>
+         <div class="menu-item-name">
+              <p>{{ $t(menuItem.name) }}</p>
+              <span v-if="menuItem.description">{{ $t(menuItem.description) }}</span>
+         </div>
+      </div>
        <div class="menu-item-price">{{ menuItem.price }} {{ $t("mkd") }}</div>
     </div>
 </template>
@@ -20,10 +22,19 @@ const props = defineProps(['menuItem']);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     column-gap: 0.5rem;
 
     width: 100%;
+}
+
+.menu-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
 }
 
 .menu-item-image-wrapper {
@@ -32,12 +43,12 @@ const props = defineProps(['menuItem']);
     align-items: center;
     justify-content: center;
 
-    aspect-ratio: 1/1;
     background-color: #83837b0f;
     border-radius: 50%;
     
     padding: 0.8rem;
-    height: 60px;
+    height: 65px;
+    width: 65px;
 }
 
 .menu-item-image {
@@ -62,6 +73,8 @@ const props = defineProps(['menuItem']);
 }
 
 .menu-item-price {
+    min-width: 50px;
+    text-align: right;
     color: #040205;
     font-size: 0.9rem;
     font-weight: 600;
@@ -74,16 +87,14 @@ const props = defineProps(['menuItem']);
 
     .menu-item-image-wrapper {
         height: 75px;
-    }
-
-    .menu-item-name {
-        flex: 0 1 45%;
+        width: 75px;
     }
 }
 
 @media (min-width: 768px) {
     .menu-item-image-wrapper {
         height: 100px;
+        width: 100px;
     }
 
     .menu-item-name > p {
