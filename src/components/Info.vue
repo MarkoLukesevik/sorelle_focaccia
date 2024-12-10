@@ -18,10 +18,10 @@
                 </div>
                 <div class="info-content__contact">
                     <p>{{ $t('contactTel') }}</p>
-                    <a href="tel:+38977222758">077 222 758</a>
+                    <a href="tel:+38977222755">077 222 755</a>
                 </div>
                 <div class="info-content__icons">
-                    <a href="https://maps.app.goo.gl/2C32+79J?fbclid=PAZXh0bgNhZW0CMTEAAaa6yJlHaNfBpm_HGxoD9AZzoK_X4Yx0hTed54S7PR26iFYTtzg3S1ivNJ4_aem_HyapnhWtQzKrVOO81pUDiw" target="_blank">
+                    <a href="https://www.google.com/maps/place/Sorelle+Focaccia/@42.0032791,21.4009124,17z/data=!3m1!4b1!4m6!3m5!1s0x135415007d1544eb:0xf5322c688474e84!8m2!3d42.0032791!4d21.4009124!16s%2Fg%2F11y8vyy8tm?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                         <img class="info-img" src="/assets/images/location.png" alt="" />
                     </a>
                     <a href="https://www.instagram.com/sorelle_focaccia/" target="_blank">
