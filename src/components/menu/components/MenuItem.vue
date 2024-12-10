@@ -73,7 +73,7 @@ const props = defineProps(['menuItem']);
 }
 
 .menu-item-price {
-    min-width: 50px;
+    min-width: 60px;
     text-align: right;
     color: #040205;
     font-size: 0.9rem;
